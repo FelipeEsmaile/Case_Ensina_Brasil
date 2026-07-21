@@ -1,0 +1,337 @@
+Registro_Ensina,Turma_Ensina,Polo_Ensina,Raça_Ensina,Gênero_Ensina,Grau Acadêmico_Ensina,Função_Avaliador(a),Escola_Avaliador,Desenvolvimento Contínuo,Visão Estratégica,Colaboração e Parceria,Adaptação e Inovação,Capacidade de Execução,Comunicação Empática
+240.003,2.024,Petrolina,Preta,Não Binária ou Não Binário,Bacharelado,Diretor(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,1.0,1.0,0.81,1.0,1.0,1.0
+240.003,2.024,Petrolina,Preta,Não Binária ou Não Binário,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.56,0.62,0.5,0.5,0.5,0.56
+240.004,2.024,Vitória,Sem Informação,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EMEF Maria José Costa Moraes,1.0,1.0,1.0,1.0,1.0,1.0
+240.004,2.024,Vitória,Sem Informação,Homem Cisgênero,Licenciatura,1_Consultor(a) pedagógico(a),EMEF Maria José Costa Moraes,0.69,1.0,0.62,1.0,0.94,1.0
+240.005,2.024,Cuiabá,Preta,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EE José de Mesquita,1.0,1.0,1.0,1.0,1.0,1.0
+240.005,2.024,Cuiabá,Preta,Homem Cisgênero,Bacharelado,3_Consultor(a) pedagógico(a),EE José de Mesquita,1.0,1.0,1.0,0.94,0.88,1.0
+240.006,2.024,Caruaru,Parda,Homem Cisgênero,Licenciatura,Diretor(a),ETI Irmã Ceciliana Gross,0.81,0.94,0.92,1.0,1.0,0.88
+240.006,2.024,Caruaru,Parda,Homem Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),ETI Irmã Ceciliana Gross,0.62,0.75,0.75,0.81,0.88,0.81
+250.006,2.025,Cuiabá,Parda,Homem Cisgênero,Bacharelado,Coordenador(a) de Área,EE Prof. Rafael Rueda,1.0,1.0,1.0,1.0,1.0,1.0
+250.006,2.025,Cuiabá,Parda,Homem Cisgênero,Bacharelado,8_Consultor(a) pedagógico(a),EE Prof. Rafael Rueda,0.94,1.0,0.94,0.88,0.75,1.0
+250.007,2.025,Vitória,Preta,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EMEF Ti Moacyr Avidos,0.81,0.75,0.81,0.75,0.75,0.94
+250.007,2.025,Vitória,Preta,Homem Cisgênero,Bacharelado,6_Consultor(a) pedagógico(a),EMEF Ti Moacyr Avidos,0.81,0.56,0.69,0.56,0.56,0.69
+240.01,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,Coordenador(a) Pedagógico(a),Escola Estadual Maria Constança B. Machado,0.62,0.5,0.5,0.44,0.69,0.69
+240.01,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,12_Consultor(a) pedagógico(a),Escola Estadual Maria Constança B. Machado,0.62,0.69,0.5,0.5,0.75,0.75
+240.013,2.024,Petrolina,Preta,Mulher Cisgênero,Licenciatura,Vice-diretor(a),Escola Municipal Moisés Barreto dos Santos,0.75,0.75,0.81,0.88,1.0,0.88
+240.013,2.024,Petrolina,Preta,Mulher Cisgênero,Licenciatura,2_Consultor(a) pedagógico(a),Escola Municipal Moisés Barreto dos Santos,0.44,0.56,0.69,0.5,0.75,0.75
+240.015,2.024,Campo Grande,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),Escola Estadual Lino Villachá,0.94,1.0,1.0,1.0,1.0,1.0
+240.015,2.024,Campo Grande,Preta,Mulher Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),Escola Estadual Lino Villachá,1.0,1.0,1.0,1.0,1.0,1.0
+240.016,2.024,São Luís,Parda,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),CE Benedito Leite,1.0,1.0,1.0,1.0,1.0,1.0
+240.016,2.024,São Luís,Parda,Mulher Cisgênero,Licenciatura,5_Consultor(a) pedagógico(a),Outros,0.33,0.38,0.5,0.25,0.31,0.44
+250.011,2.025,Petrolina,Preta,Homem Cisgênero,Bacharelado,Diretor(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.94,1.0,0.81,1.0,1.0,1.0
+250.011,2.025,Petrolina,Preta,Homem Cisgênero,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.69,0.75,0.56,0.69,0.62,0.81
+250.013,2.025,Cuiabá,Preta,Mulher Cisgênero,Bacharelado e Licenciatura,Diretor(a),EE Gustavo Kulmann,1.0,1.0,1.0,1.0,1.0,1.0
+250.013,2.025,Cuiabá,Preta,Mulher Cisgênero,Bacharelado e Licenciatura,3_Consultor(a) pedagógico(a),EE Gustavo Kulmann,0.88,0.75,0.94,0.75,0.88,0.69
+250.017,2.025,Cuiabá,Branca,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EE José de Mesquita,1.0,1.0,1.0,1.0,1.0,1.0
+250.017,2.025,Cuiabá,Branca,Homem Cisgênero,Bacharelado,3_Consultor(a) pedagógico(a),EE José de Mesquita,1.0,1.0,1.0,1.0,1.0,1.0
+240.023,2.024,Vitória,Parda,Não Binária ou Não Binário,Bacharelado,Coordenador(a) de Área,EMEFTI José Áureo Monjardim,0.81,0.81,0.75,0.81,0.88,0.75
+240.023,2.024,Vitória,Parda,Não Binária ou Não Binário,Bacharelado,4_Consultor(a) pedagógico(a),EMEFTI José Áureo Monjardim,0.69,0.62,0.75,0.75,0.81,0.69
+240.024,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,0.88,0.88,0.81,0.88,1.0,0.88
+240.024,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,1.0,1.0,1.0,1.0,0.94,0.94
+240.027,2.024,Vitória,Sem Informação,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF Heloísa Abreu Júdice de Mattos,0.94,0.88,1.0,0.62,0.75,0.94
+240.027,2.024,Vitória,Sem Informação,Mulher Cisgênero,Licenciatura,11_Consultor(a) pedagógico(a),EMEF Heloísa Abreu Júdice de Mattos,0.67,0.81,0.88,0.75,0.69,1.0
+250.02,2.025,Águas Lindas de Goiás,Parda,Mulher Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Juscelino Kubitschek de Oliveira,1.0,0.94,0.94,1.0,0.88,0.94
+250.02,2.025,Águas Lindas de Goiás,Parda,Mulher Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Colégio Estadual Juscelino Kubitschek de Oliveira,1.0,0.94,0.94,1.0,0.88,0.81
+250.027,2.025,Vitória,Parda,Homem Cisgênero,Bacharelado,Diretor(a),EMEF Ceciliano Abel de Almeida,1.0,1.0,1.0,1.0,1.0,1.0
+250.027,2.025,Vitória,Parda,Homem Cisgênero,Bacharelado,7_Consultor(a) pedagógico(a),EMEF Ceciliano Abel de Almeida,0.94,1.0,0.94,1.0,0.94,1.0
+240.029,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),EE Padre José Scampini,1.0,1.0,0.94,1.0,1.0,0.94
+240.029,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),EE Padre José Scampini,0.94,1.0,1.0,1.0,1.0,1.0
+250.029,2.025,Petrolina,Preta,Mulher Cisgênero,Tecnólogo (CST),Diretor(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.88,0.88,1.0,0.81,0.88,0.94
+250.029,2.025,Petrolina,Preta,Mulher Cisgênero,Tecnólogo (CST),2_Consultor(a) pedagógico(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.44,0.44,0.81,0.44,0.25,0.69
+250.03,2.025,Águas Lindas de Goiás,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Colégio Estadual Ayrton Senna da Silva,0.88,1.0,1.0,1.0,1.0,0.88
+250.03,2.025,Águas Lindas de Goiás,Branca,Mulher Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Ayrton Senna da Silva,0.69,0.81,0.88,0.81,0.75,0.62
+240.03,2.024,Águas Lindas de Goiás,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Mansões Odisseia,0.94,0.88,0.88,0.94,0.88,0.88
+240.03,2.024,Águas Lindas de Goiás,Branca,Mulher Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Colégio Estadual Mansões Odisseia,0.62,0.38,0.38,0.44,0.31,0.31
+240.031,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EMEF Alberto de Almeida,1.0,1.0,1.0,1.0,1.0,1.0
+240.031,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,1_Consultor(a) pedagógico(a),EMEF Alberto de Almeida,0.69,0.88,0.94,1.0,1.0,1.0
+250.033,2.025,Vitória,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EMEF Rita de Cássia Oliveira,0.94,0.88,0.94,0.94,1.0,0.94
+250.033,2.025,Vitória,Branca,Mulher Cisgênero,Bacharelado,4_Consultor(a) pedagógico(a),EMEF Rita de Cássia Oliveira,0.75,0.81,0.81,0.81,0.88,0.75
+240.036,2.024,Campo Grande,Parda,Homem Cisgênero,Licenciatura,Diretor(a),Escola Estadual Lino Villachá,1.0,1.0,1.0,1.0,1.0,1.0
+240.036,2.024,Campo Grande,Parda,Homem Cisgênero,Licenciatura,12_Consultor(a) pedagógico(a),Escola Estadual Lino Villachá,1.0,1.0,1.0,1.0,1.0,1.0
+240.038,2.024,Águas Lindas de Goiás,Prefiro não informar,Homem Cisgênero,Licenciatura,Diretor(a),Colégio Estadual Mansões Odisseia,1.0,1.0,0.88,1.0,0.88,0.94
+240.038,2.024,Águas Lindas de Goiás,Prefiro não informar,Homem Cisgênero,Licenciatura,13_Consultor(a) pedagógico(a),Colégio Estadual Mansões Odisseia,0.88,0.62,0.92,0.56,0.75,1.0
+250.037,2.025,Vitória,Preta,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EMEF Alberto de Almeida,0.83,0.88,1.0,1.0,1.0,0.88
+250.037,2.025,Vitória,Preta,Mulher Cisgênero,Licenciatura,1_Consultor(a) pedagógico(a),EMEF Alberto de Almeida,1.0,0.94,0.83,0.75,0.81,0.83
+240.039,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,Diretor(a),EMEF Eliane Rodrigues dos Santos,0.25,0.25,0.42,0.56,0.5,0.5
+240.039,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,11_Consultor(a) pedagógico(a),EMEF Eliane Rodrigues dos Santos,0.67,0.69,0.5,0.56,0.56,0.69
+240.046,2.024,Caruaru,Parda,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),ETI Irmã Ceciliana Gross,0.62,0.56,0.67,0.62,0.75,0.56
+240.046,2.024,Caruaru,Parda,Mulher Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),ETI Irmã Ceciliana Gross,0.44,0.56,0.62,0.44,0.69,0.69
+250.047,2.025,Vitória,Preta,Homem Cisgênero,Tecnólogo (CST),Coordenador(a) Pedagógico(a),EMEF Maria José Costa Moraes,0.81,0.81,0.88,0.81,0.75,0.69
+250.047,2.025,Vitória,Preta,Homem Cisgênero,Tecnólogo (CST),1_Consultor(a) pedagógico(a),EMEF Maria José Costa Moraes,0.75,0.42,0.83,0.67,0.25,0.75
+250.048,2.025,Cuiabá,Preta,Homem Cisgênero,Licenciatura,Assistente Social,EE Dr. Mário de Castro,0.88,0.88,1.0,0.88,0.81,0.88
+250.048,2.025,Cuiabá,Preta,Homem Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Dr. Mário de Castro,0.69,0.81,0.44,0.81,0.75,1.0
+250.049,2.025,Caruaru,Amarela,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),ETI Capitão João Velho,1.0,0.81,0.94,0.94,0.88,0.75
+250.049,2.025,Caruaru,Amarela,Homem Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),ETI Capitão João Velho,0.62,0.69,0.94,0.75,0.62,0.62
+250.05,2.025,Luziânia,Parda,Homem Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Alceu de Araújo Roriz,0.69,0.88,0.56,0.81,0.81,0.62
+250.05,2.025,Luziânia,Parda,Homem Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Alceu de Araújo Roriz,0.31,0.56,0.62,0.62,0.56,0.31
+240.195,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,Diretor(a),EMEF Prof. Maria Stella de Novaes,0.56,0.56,0.58,0.58,0.69,0.81
+240.195,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,1_Consultor(a) pedagógico(a),EMEF Prof. Maria Stella de Novaes,0.67,0.88,0.69,0.88,0.81,0.75
+250.052,2.025,Vitória,Parda,Homem Cisgênero,Licenciatura,Diretor(a),EMEF Orlandina D’Almeida Lucas,0.94,1.0,1.0,1.0,1.0,1.0
+250.052,2.025,Vitória,Parda,Homem Cisgênero,Licenciatura,11_Consultor(a) pedagógico(a),EMEF Orlandina D’Almeida Lucas,0.67,0.69,0.83,0.69,0.62,0.62
+250.053,2.025,Cuiabá,Branca,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Padre Firmo Pinto Duarte Filho,0.94,1.0,1.0,0.88,1.0,1.0
+250.053,2.025,Cuiabá,Branca,Homem Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Padre Firmo Pinto Duarte Filho,1.0,0.88,1.0,1.0,1.0,1.0
+240.054,2.024,São Luís,Parda,Homem Cisgênero,Bacharelado,Diretor(a),Centro Educa Mais João Francisco Lisboa,1.0,1.0,1.0,1.0,0.94,1.0
+240.054,2.024,São Luís,Parda,Homem Cisgênero,Bacharelado,5_Consultor(a) pedagógico(a),Outros,0.56,0.69,0.5,0.75,0.62,0.5
+240.055,2.024,Campo Grande,Branca,Homem Cisgênero,Bacharelado,Diretor(a),EE Padre José Scampini,0.81,0.81,0.94,0.88,0.75,0.94
+240.055,2.024,Campo Grande,Branca,Homem Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),EE Padre José Scampini,0.5,0.81,0.69,0.81,0.69,0.62
+250.055,2.025,Vitória,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),EMEF Ceciliano Abel de Almeida,1.0,0.88,1.0,1.0,0.81,0.94
+250.055,2.025,Vitória,Branca,Mulher Cisgênero,Bacharelado,7_Consultor(a) pedagógico(a),EMEF Ceciliano Abel de Almeida,0.94,1.0,0.88,0.94,0.94,1.0
+240.059,2.024,São Luís,Parda,Mulher Cisgênero,Bacharelado,Diretor(a),Centro Educa Mais Coelho Neto,0.75,0.81,0.75,0.75,0.81,0.75
+240.059,2.024,São Luís,Parda,Mulher Cisgênero,Bacharelado,5_Consultor(a) pedagógico(a),Outros,0.81,0.81,0.94,0.81,0.56,0.81
+250.056,2.025,Cuiabá,Branca,Mulher Cisgênero,Sem Informação,Assistente Social,EE Dr. Mário de Castro,0.94,0.94,0.94,0.94,0.88,1.0
+250.056,2.025,Cuiabá,Branca,Mulher Cisgênero,Sem Informação,8_Consultor(a) pedagógico(a),EE Dr. Mário de Castro,0.62,0.75,0.38,0.69,0.75,0.94
+240.06,2.024,Caruaru,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),Escola Municipal Prefeito João Lyra Filho,0.25,0.25,0.25,0.25,0.25,0.25
+240.06,2.024,Caruaru,Preta,Mulher Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),Escola Municipal Prefeito João Lyra Filho,0.5,0.33,0.58,0.38,0.5,0.42
+240.061,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Estadual Maria Constança B. Machado,0.44,0.38,0.92,0.5,0.44,0.56
+240.061,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),Escola Estadual Maria Constança B. Machado,0.94,1.0,0.69,0.88,0.69,0.81
+250.063,2.025,Cuiabá,Branca,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Juarez Rodrigues dos Anjos,1.0,0.88,0.94,0.88,0.88,0.94
+250.063,2.025,Cuiabá,Branca,Homem Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Juarez Rodrigues dos Anjos,0.75,1.0,0.81,0.94,0.88,1.0
+240.066,2.024,Vitória,Preta,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF Tancredo de Almeida Neves,1.0,1.0,1.0,1.0,1.0,1.0
+240.066,2.024,Vitória,Preta,Mulher Cisgênero,Licenciatura,6_Consultor(a) pedagógico(a),EMEF Tancredo de Almeida Neves,0.94,1.0,0.81,0.94,1.0,1.0
+240.062,2.024,Vitória,Branca,Não Binária ou Não Binário,Bacharelado,Diretor(a),EMEF Paulo Roberto Vieira Gomes,,,,0.5,,
+240.062,2.024,Vitória,Branca,Não Binária ou Não Binário,Bacharelado,7_Consultor(a) pedagógico(a),EMEF Paulo Roberto Vieira Gomes,0.31,0.62,0.38,0.69,0.81,0.56
+250.065,2.025,Petrolina,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal José Esmerindo Ribeiro,0.94,0.94,0.94,1.0,1.0,0.81
+250.065,2.025,Petrolina,Branca,Mulher Cisgênero,Bacharelado,5_Consultor(a) pedagógico(a),Outros,0.31,0.44,0.42,0.5,0.5,0.38
+240.071,2.024,Vitória,Parda,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF Francisco Lacerda Aguiar,0.83,1.0,0.92,1.0,0.92,0.94
+240.071,2.024,Vitória,Parda,Mulher Cisgênero,Licenciatura,6_Consultor(a) pedagógico(a),EMEF Francisco Lacerda Aguiar,0.94,0.75,1.0,0.81,0.88,0.75
+240.072,2.024,Campo Grande,Parda,Mulher Cisgênero,Licenciatura,Diretor(a),EE José Mamede de Aquino,1.0,1.0,0.94,1.0,1.0,1.0
+240.072,2.024,Campo Grande,Parda,Mulher Cisgênero,Licenciatura,12_Consultor(a) pedagógico(a),EE José Mamede de Aquino,1.0,1.0,1.0,1.0,1.0,1.0
+240.073,2.024,Cuiabá,Preta,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Dr. Hélio Palma de Arruda,1.0,1.0,1.0,1.0,1.0,1.0
+240.073,2.024,Cuiabá,Preta,Mulher Cisgênero,Licenciatura,3_Consultor(a) pedagógico(a),EE Dr. Hélio Palma de Arruda,0.81,1.0,0.75,0.88,0.94,1.0
+240.075,2.024,Cuiabá,Branca,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Leovegildo de Melo,0.67,0.69,0.81,0.81,0.94,0.81
+240.075,2.024,Cuiabá,Branca,Mulher Cisgênero,Licenciatura,3_Consultor(a) pedagógico(a),EE Leovegildo de Melo,0.44,0.62,0.75,0.62,0.5,0.69
+240.076,2.024,Vitória,Branca,Homem Cisgênero,Bacharelado,Diretor(a),EMEF João Bandeira (Prof.),0.69,0.69,0.67,0.69,0.62,0.81
+240.076,2.024,Vitória,Branca,Homem Cisgênero,Bacharelado,7_Consultor(a) pedagógico(a),EMEF João Bandeira (Prof.),0.94,0.81,0.81,1.0,0.94,0.88
+240.08,2.024,Campo Grande,Branca,Homem Cisgênero,Bacharelado,Diretor(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,1.0,1.0,1.0,1.0,1.0,1.0
+240.08,2.024,Campo Grande,Branca,Homem Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,1.0,1.0,1.0,1.0,1.0,1.0
+240.081,2.024,Petrolina,Preta,Homem Cisgênero,Bacharelado,Diretor(a),Escola Municipal José Nunes de Santana,1.0,1.0,1.0,1.0,1.0,1.0
+240.081,2.024,Petrolina,Preta,Homem Cisgênero,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal José Nunes de Santana,1.0,1.0,0.94,0.75,1.0,0.94
+250.071,2.025,Vitória,Preta,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EMEF Alberto de Almeida,1.0,1.0,1.0,1.0,1.0,1.0
+250.071,2.025,Vitória,Preta,Homem Cisgênero,Licenciatura,1_Consultor(a) pedagógico(a),EMEF Alberto de Almeida,0.92,0.81,0.92,0.69,0.88,0.88
+240.084,2.024,Vitória,Sem Informação,Mulher Cisgênero,Bacharelado e Licenciatura,Bibliotecária,EMEF Rita de Cássia Oliveira,0.81,0.81,0.81,0.81,0.88,0.88
+240.084,2.024,Vitória,Sem Informação,Mulher Cisgênero,Bacharelado e Licenciatura,4_Consultor(a) pedagógico(a),EMEF Rita de Cássia Oliveira,0.69,0.75,0.81,0.62,0.62,0.62
+250.072,2.025,Caruaru,Branca,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),Escolas Reunidas Duque de Caxias,0.56,0.44,0.56,0.56,0.44,0.69
+250.072,2.025,Caruaru,Branca,Mulher Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),Escolas Reunidas Duque de Caxias,0.5,0.62,0.5,0.81,0.62,0.69
+240.085,2.024,Campo Grande,Branca,Mulher Cisgênero,Licenciatura,Diretor(a),EE José Mamede de Aquino,0.69,0.94,0.62,0.81,1.0,0.94
+240.085,2.024,Campo Grande,Branca,Mulher Cisgênero,Licenciatura,12_Consultor(a) pedagógico(a),EE José Mamede de Aquino,1.0,1.0,1.0,1.0,1.0,1.0
+240.087,2.024,Vitória,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),EMEF Orlandina D’Almeida Lucas,0.69,0.81,0.69,0.88,0.62,0.81
+240.087,2.024,Vitória,Preta,Mulher Cisgênero,Bacharelado,11_Consultor(a) pedagógico(a),EMEF Orlandina D’Almeida Lucas,0.75,0.88,0.62,0.88,0.75,1.0
+240.09,2.024,Vitória,Preta,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EMEF Prezideu Amorim,0.88,1.0,0.88,0.69,1.0,1.0
+240.09,2.024,Vitória,Preta,Mulher Cisgênero,Licenciatura,6_Consultor(a) pedagógico(a),EMEF Prezideu Amorim,0.94,0.94,0.94,0.62,0.81,1.0
+240.091,2.024,Petrolina,Parda,Mulher Cisgênero,Licenciatura,Diretor(a),Escola Municipal de Educação de Tempo Integral Mãe Vitória,0.81,0.81,0.81,0.81,0.81,0.81
+240.091,2.024,Petrolina,Parda,Mulher Cisgênero,Licenciatura,2_Consultor(a) pedagógico(a),Escola Municipal de Educação de Tempo Integral Mãe Vitória,0.5,0.5,0.5,0.75,0.62,0.56
+240.092,2.024,Caruaru,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,Diretor(a),ETI Capitão João Velho,0.94,0.88,0.88,0.69,0.88,0.81
+240.092,2.024,Caruaru,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,10_Consultor(a) pedagógico(a),ETI Capitão João Velho,0.88,0.81,0.88,0.62,0.75,0.75
+240.093,2.024,Vitória,Branca,Homem Cisgênero,Licenciatura,Diretor(a),EMEF Heloísa Abreu Júdice de Mattos,0.58,0.44,0.42,0.44,0.38,0.56
+240.093,2.024,Vitória,Branca,Homem Cisgênero,Licenciatura,11_Consultor(a) pedagógico(a),EMEF Heloísa Abreu Júdice de Mattos,0.5,0.62,0.62,0.38,0.38,0.69
+240.097,2.024,Campo Grande,Branca,Homem Cisgênero,Bacharelado,Diretor(a),EE Padre José Scampini,0.81,0.81,0.88,0.69,0.94,0.69
+240.097,2.024,Campo Grande,Branca,Homem Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),EE Padre José Scampini,0.69,0.69,0.88,0.69,0.88,0.88
+250.079,2.025,Caruaru,Parda,Mulher Cisgênero,Licenciatura,Diretor(a),Escolas Reunidas Duque de Caxias,1.0,0.94,0.94,0.88,0.94,1.0
+250.079,2.025,Caruaru,Parda,Mulher Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),Escolas Reunidas Duque de Caxias,0.62,0.81,0.67,0.81,0.69,0.75
+250.082,2.025,Petrolina,Branca,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal Professor Nicolau Boscardin,1.0,1.0,1.0,1.0,1.0,1.0
+250.082,2.025,Petrolina,Branca,Homem Cisgênero,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal Professor Nicolau Boscardin,0.56,0.69,0.69,0.75,0.75,0.5
+250.083,2.025,Cuiabá,Branca,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Padre Firmo Pinto Duarte Filho,0.81,1.0,0.94,1.0,0.94,0.81
+250.083,2.025,Cuiabá,Branca,Homem Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Padre Firmo Pinto Duarte Filho,0.81,0.94,1.0,1.0,0.88,0.88
+240.101,2.024,Campo Grande,Parda,Homem Cisgênero,Bacharelado,Diretor(a),EE Prof. Henrique Ciryllo Corrêa,0.88,0.94,0.88,0.94,0.83,0.92
+240.101,2.024,Campo Grande,Parda,Homem Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),EE Prof. Henrique Ciryllo Corrêa,0.75,0.75,0.69,0.75,0.75,0.81
+250.084,2.025,Vitória,Preta,Homem Cisgênero,Bacharelado,Diretor(a),EMEF Prof. Maria Stella de Novaes,0.5,0.56,0.5,0.56,0.5,0.94
+250.084,2.025,Vitória,Preta,Homem Cisgênero,Bacharelado,1_Consultor(a) pedagógico(a),EMEF Prof. Maria Stella de Novaes,0.69,0.75,0.75,0.75,0.69,0.88
+240.105,2.024,Vitória,Branca,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EMEF Prezideu Amorim,1.0,1.0,1.0,1.0,1.0,1.0
+240.105,2.024,Vitória,Branca,Homem Cisgênero,Licenciatura,6_Consultor(a) pedagógico(a),EMEF Prezideu Amorim,0.94,1.0,0.88,1.0,1.0,0.69
+250.086,2.025,Caruaru,Parda,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal Prefeito João Lyra Filho,1.0,1.0,1.0,1.0,1.0,1.0
+250.086,2.025,Caruaru,Parda,Mulher Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),Escola Municipal Prefeito João Lyra Filho,0.69,0.81,0.88,0.94,0.88,0.81
+240.103,2.024,Luziânia,Parda,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Colégio Estadual Hélio Roriz,0.81,1.0,0.81,0.75,0.88,0.81
+240.103,2.024,Luziânia,Parda,Homem Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Hélio Roriz,0.81,0.88,0.75,0.81,0.81,0.69
+240.104,2.024,Águas Lindas de Goiás,Parda,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Colégio Estadual da Polícia Militar de Águas Lindas de Goiás,1.0,1.0,1.0,1.0,1.0,1.0
+240.104,2.024,Águas Lindas de Goiás,Parda,Homem Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Colégio Estadual da Polícia Militar de Águas Lindas de Goiás,0.94,0.94,0.92,1.0,0.94,0.94
+240.102,2.024,Campo Grande,Parda,Homem Cisgênero,Licenciatura,Diretor(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,0.88,0.81,1.0,0.81,0.88,0.88
+240.102,2.024,Campo Grande,Parda,Homem Cisgênero,Licenciatura,12_Consultor(a) pedagógico(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,0.75,0.81,0.75,0.88,0.94,0.75
+250.08,2.025,Águas Lindas de Goiás,Branca,Homem Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Maria do Carmo Lima,0.5,0.42,0.56,0.5,0.56,0.5
+250.08,2.025,Águas Lindas de Goiás,Branca,Homem Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Colégio Estadual Maria do Carmo Lima,0.5,0.5,0.62,0.25,0.38,0.44
+250.081,2.025,Petrolina,Branca,Homem Cisgênero,Licenciatura,Vice-diretor(a),Escola Municipal Luiz de Souza,0.94,1.0,0.94,1.0,1.0,1.0
+250.081,2.025,Petrolina,Branca,Homem Cisgênero,Licenciatura,2_Consultor(a) pedagógico(a),Escola Municipal Luiz de Souza,0.75,1.0,0.94,0.75,0.62,0.5
+240.099,2.024,Cuiabá,Parda,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Leônidas Antero de Matos,1.0,0.81,0.88,1.0,0.81,0.81
+240.099,2.024,Cuiabá,Parda,Homem Cisgênero,Licenciatura,3_Consultor(a) pedagógico(a),EE Leônidas Antero de Matos,0.75,0.94,0.62,1.0,0.81,0.81
+240.106,2.024,Águas Lindas de Goiás,Parda,Mulher Cisgênero,Licenciatura,Diretor(a),Colégio Estadual Princesa Daiana,1.0,1.0,1.0,1.0,1.0,1.0
+240.106,2.024,Águas Lindas de Goiás,Parda,Mulher Cisgênero,Licenciatura,13_Consultor(a) pedagógico(a),Colégio Estadual Princesa Daiana,0.67,0.81,0.92,0.69,0.69,0.81
+250.089,2.025,Cuiabá,Parda,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Malik Didier Namer Zahafi,0.94,1.0,1.0,1.0,1.0,1.0
+250.089,2.025,Cuiabá,Parda,Mulher Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Malik Didier Namer Zahafi,1.0,1.0,1.0,0.88,1.0,1.0
+250.09,2.025,Luziânia,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Osvaldo da Costa Meireles (CEPI),1.0,1.0,1.0,0.94,0.94,1.0
+250.09,2.025,Luziânia,Branca,Mulher Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Osvaldo da Costa Meireles (CEPI),0.81,0.88,0.94,0.94,0.94,0.94
+240.108,2.024,Vitória,Preta,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF Neusa Nunes Gonçalves,1.0,1.0,1.0,1.0,1.0,1.0
+240.108,2.024,Vitória,Preta,Mulher Cisgênero,Licenciatura,11_Consultor(a) pedagógico(a),EMEF Neusa Nunes Gonçalves,0.58,0.69,1.0,0.88,0.75,0.88
+250.076,2.025,Caruaru,Branca,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),ETI Capitão João Velho,0.88,0.75,0.83,0.92,0.81,0.81
+250.076,2.025,Caruaru,Branca,Mulher Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),ETI Capitão João Velho,0.62,0.56,0.88,0.75,0.69,0.69
+250.087,2.025,Vitória,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),EMEF Paulo Roberto Vieira Gomes,1.0,0.83,1.0,0.75,0.75,0.92
+250.087,2.025,Vitória,Branca,Mulher Cisgênero,Bacharelado,7_Consultor(a) pedagógico(a),EMEF Paulo Roberto Vieira Gomes,0.69,0.81,0.62,0.67,0.81,0.94
+250.091,2.025,Vitória,Branca,Homem Cisgênero,Bacharelado,Diretor(a),EMEF Izaura Marques da Silva,0.83,0.67,0.83,0.67,0.81,0.88
+250.091,2.025,Vitória,Branca,Homem Cisgênero,Bacharelado,6_Consultor(a) pedagógico(a),EMEF Izaura Marques da Silva,0.75,,0.81,,0.75,0.67
+240.109,2.024,Vitória,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,Coordenador(a) Pedagógico(a),EMEF Prezideu Amorim,1.0,1.0,0.94,1.0,1.0,1.0
+240.109,2.024,Vitória,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,6_Consultor(a) pedagógico(a),EMEF Prezideu Amorim,0.81,0.94,0.88,0.94,1.0,0.88
+250.093,2.025,Cuiabá,Branca,Mulher Cisgênero,Licenciatura,Coordenador(a) de Área,EE Prof. Rafael Rueda,1.0,1.0,1.0,1.0,1.0,1.0
+250.093,2.025,Cuiabá,Branca,Mulher Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Prof. Rafael Rueda,1.0,0.88,0.94,0.81,0.88,1.0
+250.094,2.025,Vitória,Preta,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF Paulo Roberto Vieira Gomes,0.67,0.88,0.88,0.75,0.94,0.67
+250.094,2.025,Vitória,Preta,Mulher Cisgênero,Licenciatura,7_Consultor(a) pedagógico(a),EMEF Paulo Roberto Vieira Gomes,0.38,0.56,0.38,0.44,0.69,0.62
+240.115,2.024,Caruaru,Sem Informação,Mulher Cisgênero,Tecnólogo,Diretor(a),ETI Irmã Ceciliana Gross,0.75,0.44,0.75,0.75,0.83,0.81
+240.115,2.024,Caruaru,Sem Informação,Mulher Cisgênero,Tecnólogo,10_Consultor(a) pedagógico(a),ETI Irmã Ceciliana Gross,0.69,0.81,0.88,0.81,0.88,0.94
+240.121,2.024,Cuiabá,Branca,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Rodolfo Augusto T. Curvo,0.88,0.88,0.92,1.0,0.94,0.88
+240.121,2.024,Cuiabá,Branca,Mulher Cisgênero,Licenciatura,3_Consultor(a) pedagógico(a),EE Rodolfo Augusto T. Curvo,0.81,1.0,0.69,1.0,0.94,1.0
+250.099,2.025,Vitória,Branca,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF João Bandeira (Prof.),0.94,0.94,0.81,0.94,0.88,1.0
+250.099,2.025,Vitória,Branca,Mulher Cisgênero,Licenciatura,7_Consultor(a) pedagógico(a),EMEF João Bandeira (Prof.),0.75,0.75,0.62,0.75,0.56,0.88
+250.1,2.025,Petrolina,Parda,Mulher Cisgênero,Bacharelado,Diretor(a),Escola Municipal João Batista dos Santos,0.62,0.62,0.81,0.75,0.62,0.62
+250.1,2.025,Petrolina,Parda,Mulher Cisgênero,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal João Batista dos Santos,0.62,0.62,0.62,0.69,0.62,0.62
+250.102,2.025,Águas Lindas de Goiás,Branca,Mulher Cisgênero,Licenciatura,Diretor(a),Colégio Estadual Ayrton Senna da Silva,0.94,1.0,1.0,1.0,1.0,1.0
+250.102,2.025,Águas Lindas de Goiás,Branca,Mulher Cisgênero,Licenciatura,9_Consultor(a) pedagógico(a),Colégio Estadual Ayrton Senna da Silva,0.69,0.81,0.81,0.75,0.75,0.75
+250.105,2.025,Cuiabá,Preta,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Juarez Rodrigues dos Anjos,0.75,0.88,0.69,0.75,0.75,0.81
+250.105,2.025,Cuiabá,Preta,Mulher Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Juarez Rodrigues dos Anjos,0.5,0.38,0.56,0.31,0.31,0.56
+240.131,2.024,Campo Grande,Branca,Prefiro não informar,Licenciatura,Coordenador(a) Pedagógico(a),Escola Estadual Maria Constança B. Machado,0.5,0.62,0.25,0.69,0.75,0.62
+240.131,2.024,Campo Grande,Branca,Prefiro não informar,Licenciatura,12_Consultor(a) pedagógico(a),Escola Estadual Maria Constança B. Machado,0.69,0.75,0.81,1.0,1.0,0.81
+240.132,2.024,Vitória,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EMEF Prezideu Amorim,1.0,1.0,1.0,1.0,1.0,1.0
+240.132,2.024,Vitória,Branca,Mulher Cisgênero,Bacharelado,6_Consultor(a) pedagógico(a),EMEF Prezideu Amorim,0.94,1.0,0.94,0.81,0.94,0.88
+240.135,2.024,Caruaru,Branca,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),Escolas Reunidas Duque de Caxias,0.94,0.88,1.0,1.0,0.92,0.94
+240.135,2.024,Caruaru,Branca,Mulher Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),Escolas Reunidas Duque de Caxias,0.75,0.81,0.81,0.88,0.88,0.75
+250.109,2.025,Vitória,Preta,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EMEF Maria José Costa Moraes,1.0,1.0,1.0,1.0,1.0,1.0
+250.109,2.025,Vitória,Preta,Homem Cisgênero,Licenciatura,1_Consultor(a) pedagógico(a),EMEF Maria José Costa Moraes,0.67,0.75,0.88,0.69,0.75,0.81
+240.136,2.024,Petrolina,Parda,Homem Cisgênero,Bacharelado,Diretor(a),Escola Municipal Professora Eliete Araújo de Souza,1.0,1.0,1.0,1.0,1.0,1.0
+240.136,2.024,Petrolina,Parda,Homem Cisgênero,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal Professora Eliete Araújo de Souza,0.56,0.69,0.62,0.69,0.56,0.62
+250.178,2.025,Petrolina,Branca,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal Professor Nicolau Boscardin,1.0,1.0,1.0,1.0,1.0,1.0
+250.178,2.025,Petrolina,Branca,Homem Cisgênero,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal Professor Nicolau Boscardin,0.94,0.62,0.94,0.62,0.56,0.81
+250.112,2.025,Luziânia,Branca,Homem Cisgênero,Sem Informação,Diretor(a),Colégio Estadual Maria Abadia Salomão,0.94,0.94,0.88,0.88,0.88,0.94
+250.112,2.025,Luziânia,Branca,Homem Cisgênero,Sem Informação,9_Consultor(a) pedagógico(a),Colégio Estadual Maria Abadia Salomão,0.56,0.56,0.5,0.62,0.44,0.38
+240.141,2.024,Cuiabá,Preta,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE José de Mesquita,1.0,1.0,1.0,1.0,1.0,1.0
+240.141,2.024,Cuiabá,Preta,Homem Cisgênero,Licenciatura,3_Consultor(a) pedagógico(a),EE José de Mesquita,1.0,1.0,1.0,1.0,1.0,1.0
+240.143,2.024,Petrolina,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.88,1.0,0.81,1.0,1.0,0.88
+240.143,2.024,Petrolina,Preta,Mulher Cisgênero,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.94,0.88,1.0,1.0,0.75,0.69
+250.113,2.025,Águas Lindas de Goiás,Branca,Mulher Cisgênero,Tecnólogo (CST),Coordenador(a) Pedagógico(a),Colégio Estadual Ayrton Senna da Silva,0.62,0.88,1.0,1.0,0.94,1.0
+250.113,2.025,Águas Lindas de Goiás,Branca,Mulher Cisgênero,Tecnólogo (CST),9_Consultor(a) pedagógico(a),Colégio Estadual Ayrton Senna da Silva,0.75,0.81,0.88,0.75,0.75,0.94
+250.115,2.025,Luziânia,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Osvaldo da Costa Meireles (CEPI),1.0,1.0,1.0,1.0,1.0,1.0
+250.115,2.025,Luziânia,Preta,Mulher Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Osvaldo da Costa Meireles (CEPI),0.88,0.88,1.0,0.94,0.81,0.94
+250.116,2.025,Petrolina,Parda,Mulher Cisgênero,Tecnólogo (CST),Diretor(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.69,0.75,0.75,0.69,0.75,0.75
+250.116,2.025,Petrolina,Parda,Mulher Cisgênero,Tecnólogo (CST),2_Consultor(a) pedagógico(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.62,0.56,0.31,0.62,0.67,0.75
+250.118,2.025,Caruaru,Branca,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),ETI Irmã Ceciliana Gross,0.75,0.94,0.81,1.0,1.0,0.94
+250.118,2.025,Caruaru,Branca,Mulher Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),ETI Irmã Ceciliana Gross,0.75,0.88,0.69,0.94,1.0,0.81
+240.146,2.024,Caruaru,Parda,Mulher Transsexual,Licenciatura,Diretor(a),Escolas Reunidas Duque de Caxias,0.81,0.88,0.81,0.88,1.0,0.94
+240.146,2.024,Caruaru,Parda,Mulher Transsexual,Licenciatura,10_Consultor(a) pedagógico(a),Escolas Reunidas Duque de Caxias,0.44,0.5,0.38,0.69,0.75,0.62
+240.15,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),EE Teotônio Vilela,1.0,1.0,1.0,1.0,1.0,1.0
+240.15,2.024,Campo Grande,Branca,Mulher Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),EE Teotônio Vilela,1.0,1.0,1.0,1.0,1.0,1.0
+240.151,2.024,Campo Grande,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,0.38,0.44,0.56,0.5,0.62,0.56
+240.151,2.024,Campo Grande,Preta,Mulher Cisgênero,Bacharelado,12_Consultor(a) pedagógico(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,0.31,0.56,0.56,0.69,0.5,0.81
+250.121,2.025,Caruaru,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),ETI Capitão João Velho,1.0,1.0,0.94,1.0,1.0,1.0
+250.121,2.025,Caruaru,Branca,Mulher Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),ETI Capitão João Velho,0.62,0.75,0.83,0.75,0.81,0.81
+240.149,2.024,Caruaru,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),ETI Capitão João Velho,1.0,1.0,1.0,1.0,1.0,1.0
+240.149,2.024,Caruaru,Preta,Mulher Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),ETI Capitão João Velho,0.69,0.94,1.0,0.81,0.88,1.0
+240.155,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,Diretor(a),EMEF Neusa Nunes Gonçalves,1.0,1.0,1.0,1.0,1.0,1.0
+240.155,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,1_Consultor(a) pedagógico(a),EMEF Prof. Maria Stella de Novaes,0.62,0.81,0.81,0.81,0.75,0.69
+250.122,2.025,Cuiabá,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,Coordenador(a) Pedagógico(a),Outros,1.0,1.0,1.0,1.0,1.0,1.0
+250.122,2.025,Cuiabá,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,3_Consultor(a) pedagógico(a),Outros,1.0,1.0,1.0,1.0,1.0,0.94
+240.156,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EMEF Rita de Cássia Oliveira,1.0,1.0,0.94,1.0,0.94,0.94
+240.156,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,4_Consultor(a) pedagógico(a),EMEF Rita de Cássia Oliveira,0.44,0.5,0.5,0.5,0.5,0.38
+250.124,2.025,Vitória,Branca,Homem Cisgênero,Licenciatura,Diretor(a),EMEF Mauro Braga,1.0,1.0,1.0,1.0,1.0,1.0
+250.124,2.025,Vitória,Branca,Homem Cisgênero,Licenciatura,11_Consultor(a) pedagógico(a),EMEF Mauro Braga,0.88,0.88,1.0,0.88,0.75,1.0
+250.125,2.025,Águas Lindas de Goiás,Branca,Homem Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Duque de Caxias,1.0,1.0,0.81,1.0,0.94,1.0
+250.125,2.025,Águas Lindas de Goiás,Branca,Homem Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Duque de Caxias,0.69,0.81,0.88,0.75,0.75,0.81
+240.157,2.024,Petrolina,Parda,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),Escola Municipal Paulo Freire,0.75,0.88,0.88,0.88,0.81,0.81
+240.157,2.024,Petrolina,Parda,Homem Cisgênero,Licenciatura,5_Consultor(a) pedagógico(a),Outros,0.33,0.44,0.33,0.38,0.38,0.44
+240.159,2.024,Vitória,Branca,Homem Cisgênero,Bacharelado,Diretor(a),EMEF Eliane Rodrigues dos Santos,1.0,1.0,1.0,1.0,1.0,1.0
+240.159,2.024,Vitória,Branca,Homem Cisgênero,Bacharelado,11_Consultor(a) pedagógico(a),EMEF Eliane Rodrigues dos Santos,0.92,1.0,0.83,1.0,0.94,1.0
+240.161,2.024,Caruaru,Parda,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),ETI Capitão João Velho,1.0,1.0,0.94,0.88,1.0,1.0
+240.161,2.024,Caruaru,Parda,Homem Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),ETI Capitão João Velho,0.75,0.94,0.67,0.94,0.88,0.75
+250.129,2.025,Vitória,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,Diretor(a),EMEF Neusa Nunes Gonçalves,1.0,1.0,1.0,1.0,1.0,1.0
+250.129,2.025,Vitória,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,11_Consultor(a) pedagógico(a),EMEF Neusa Nunes Gonçalves,0.92,0.62,0.94,0.62,0.62,0.88
+240.163,2.024,Caruaru,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),ETI Irmã Ceciliana Gross,0.75,0.81,0.75,0.5,0.75,0.81
+240.163,2.024,Caruaru,Branca,Mulher Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),ETI Irmã Ceciliana Gross,0.62,0.81,0.69,0.75,0.75,0.81
+240.169,2.024,Caruaru,Parda,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escolas Reunidas Duque de Caxias,0.94,0.94,1.0,0.81,0.81,0.88
+240.169,2.024,Caruaru,Parda,Mulher Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),Escolas Reunidas Duque de Caxias,0.75,0.94,0.81,0.94,1.0,0.81
+240.165,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado e Licenciatura,Coordenador(a) Pedagógico(a),EMEF Rita de Cássia Oliveira,1.0,1.0,1.0,1.0,1.0,1.0
+240.165,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado e Licenciatura,4_Consultor(a) pedagógico(a),EMEF Rita de Cássia Oliveira,0.75,,0.75,0.75,0.75,
+240.17,2.024,Vitória,Branca,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF Edna de Mattos Siqueira Gaudio,1.0,1.0,1.0,1.0,1.0,1.0
+240.17,2.024,Vitória,Branca,Mulher Cisgênero,Licenciatura,7_Consultor(a) pedagógico(a),EMEF Edna de Mattos Siqueira Gaudio,0.62,0.5,0.88,0.88,0.75,0.94
+240.172,2.024,Caruaru,Branca,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escolas Reunidas Duque de Caxias,0.5,0.31,0.69,0.38,0.38,0.44
+240.172,2.024,Caruaru,Branca,Homem Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),Escolas Reunidas Duque de Caxias,0.69,0.5,0.75,0.56,0.38,0.56
+250.136,2.025,Cuiabá,Preta,Mulher Cisgênero,Bacharelado,Assistente Social,EE Dr. Mário de Castro,1.0,0.94,0.81,1.0,0.94,1.0
+250.136,2.025,Cuiabá,Preta,Mulher Cisgênero,Bacharelado,8_Consultor(a) pedagógico(a),EE Dr. Mário de Castro,0.38,0.38,0.25,0.25,0.25,0.5
+240.176,2.024,Cuiabá,Prefiro não informar,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Mariana Luiza Moreira,0.94,0.88,0.94,0.94,0.92,1.0
+240.176,2.024,Cuiabá,Prefiro não informar,Homem Cisgênero,Licenciatura,3_Consultor(a) pedagógico(a),EE Mariana Luiza Moreira,0.75,0.94,0.69,0.81,0.75,1.0
+250.138,2.025,Vitória,Parda,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EMEF Ti Moacyr Avidos,0.94,1.0,1.0,1.0,1.0,0.94
+250.138,2.025,Vitória,Parda,Homem Cisgênero,Bacharelado,1_Consultor(a) pedagógico(a),EMEF Ti Moacyr Avidos,0.92,1.0,1.0,1.0,0.94,1.0
+250.14,2.025,Vitória,Preta,Homem Cisgênero,Licenciatura,Diretor(a),EMEF Izaura Marques da Silva,0.75,0.88,0.75,0.75,0.88,1.0
+250.14,2.025,Vitória,Preta,Homem Cisgênero,Licenciatura,6_Consultor(a) pedagógico(a),EMEF Izaura Marques da Silva,0.92,0.81,0.81,1.0,0.75,1.0
+240.179,2.024,Petrolina,Branca,Homem Cisgênero,Licenciatura,Diretor(a),Escola Municipal Professora Eliete Araújo de Souza,1.0,1.0,1.0,1.0,1.0,1.0
+240.179,2.024,Petrolina,Branca,Homem Cisgênero,Licenciatura,2_Consultor(a) pedagógico(a),Escola Municipal Professora Eliete Araújo de Souza,0.5,0.69,0.56,0.62,0.69,0.88
+240.18,2.024,Águas Lindas de Goiás,Preta,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Colégio Estadual Ayrton Senna da Silva,0.94,1.0,1.0,1.0,1.0,1.0
+240.18,2.024,Águas Lindas de Goiás,Preta,Homem Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Ayrton Senna da Silva,0.62,0.75,0.75,0.75,0.56,0.62
+250.142,2.025,Cuiabá,Preta,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EE Malik Didier Namer Zahafi,0.94,1.0,1.0,1.0,1.0,1.0
+250.142,2.025,Cuiabá,Preta,Homem Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Malik Didier Namer Zahafi,0.88,0.62,0.62,0.5,0.25,0.56
+250.143,2.025,Cuiabá,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Outros,1.0,1.0,1.0,1.0,1.0,1.0
+250.143,2.025,Cuiabá,Branca,Mulher Cisgênero,Bacharelado,3_Consultor(a) pedagógico(a),Outros,1.0,1.0,1.0,1.0,0.94,1.0
+250.145,2.025,Petrolina,Parda,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal José Esmerindo Ribeiro,0.75,0.75,0.75,0.56,0.75,0.75
+250.145,2.025,Petrolina,Parda,Homem Cisgênero,Bacharelado,5_Consultor(a) pedagógico(a),Outros,0.62,0.69,0.58,0.62,0.58,0.5
+250.146,2.025,Águas Lindas de Goiás,Parda,Mulher Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Ayrton Senna da Silva,0.75,0.88,1.0,1.0,0.94,0.75
+250.146,2.025,Águas Lindas de Goiás,Parda,Mulher Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Colégio Estadual Ayrton Senna da Silva,0.33,0.62,0.25,0.62,0.31,0.44
+240.182,2.024,Cuiabá,Preta,Mulher Cisgênero,Licenciatura,Assistente Social,EE Dr. Mário de Castro,1.0,1.0,0.94,1.0,1.0,1.0
+240.182,2.024,Cuiabá,Preta,Mulher Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Dr. Mário de Castro,0.5,0.62,0.25,0.69,0.56,1.0
+240.183,2.024,Caruaru,Branca,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal Prefeito João Lyra Filho,1.0,1.0,1.0,1.0,1.0,1.0
+240.183,2.024,Caruaru,Branca,Homem Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),ETI Irmã Ceciliana Gross,0.81,0.94,1.0,1.0,1.0,0.94
+240.186,2.024,Luziânia,Branca,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Colégio Estadual Hélio Roriz,0.94,0.94,0.88,1.0,0.94,0.88
+240.186,2.024,Luziânia,Branca,Homem Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Hélio Roriz,0.75,0.81,0.75,0.75,0.75,0.69
+250.149,2.025,Vitória,Branca,Homem Cisgênero,Bacharelado,Diretor(a),EMEF Paulo Roberto Vieira Gomes,1.0,1.0,1.0,0.94,1.0,1.0
+250.149,2.025,Vitória,Branca,Homem Cisgênero,Bacharelado,7_Consultor(a) pedagógico(a),EMEF Paulo Roberto Vieira Gomes,0.56,0.69,0.56,0.81,0.75,0.75
+250.15,2.025,Vitória,Preta,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EMEF Prezideu Amorim,1.0,1.0,1.0,0.88,1.0,0.94
+250.15,2.025,Vitória,Preta,Mulher Cisgênero,Licenciatura,6_Consultor(a) pedagógico(a),EMEF Prezideu Amorim,0.88,0.81,1.0,0.94,0.69,0.81
+240.188,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EMEF Ti Anacleta Schneider Lucas,0.92,0.88,1.0,0.81,0.94,0.94
+240.188,2.024,Vitória,Parda,Mulher Cisgênero,Bacharelado,1_Consultor(a) pedagógico(a),EMEF Ti Anacleta Schneider Lucas,0.75,0.88,0.94,1.0,0.88,0.88
+250.152,2.025,Petrolina,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal José Esmerindo Ribeiro,0.94,1.0,1.0,0.81,1.0,1.0
+250.152,2.025,Petrolina,Branca,Mulher Cisgênero,Bacharelado,5_Consultor(a) pedagógico(a),Outros,0.75,0.75,0.67,0.56,0.75,0.67
+240.192,2.024,Campo Grande,Branca,Homem Cisgênero,Bacharelado e Licenciatura,Diretor(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,1.0,1.0,1.0,1.0,1.0,1.0
+240.192,2.024,Campo Grande,Branca,Homem Cisgênero,Bacharelado e Licenciatura,12_Consultor(a) pedagógico(a),Escola Estadual Prof. Maria de Lurdes Widal Roma,1.0,1.0,1.0,1.0,1.0,1.0
+240.193,2.024,Cuiabá,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EE João Brienne de Camargo,1.0,1.0,1.0,1.0,1.0,1.0
+240.193,2.024,Cuiabá,Branca,Mulher Cisgênero,Bacharelado,3_Consultor(a) pedagógico(a),EE João Brienne de Camargo,0.69,0.56,0.81,0.75,0.69,0.88
+250.155,2.025,Vitória,Preta,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF João Bandeira (Prof.),0.62,0.56,0.69,0.62,0.62,0.75
+250.155,2.025,Vitória,Preta,Mulher Cisgênero,Licenciatura,7_Consultor(a) pedagógico(a),EMEF João Bandeira (Prof.),0.62,0.69,0.38,0.62,0.69,0.69
+250.154,2.025,Vitória,Parda,Mulher Cisgênero,Bacharelado,Diretor(a),EMEF Prof. Maria Stella de Novaes,1.0,1.0,1.0,1.0,1.0,1.0
+250.154,2.025,Vitória,Parda,Mulher Cisgênero,Bacharelado,1_Consultor(a) pedagógico(a),EMEF Prof. Maria Stella de Novaes,0.62,0.88,0.75,0.81,0.75,0.75
+250.156,2.025,Petrolina,Preta,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal Paulo Freire,0.81,0.75,1.0,0.88,0.81,0.75
+250.156,2.025,Petrolina,Preta,Mulher Cisgênero,Bacharelado,5_Consultor(a) pedagógico(a),Outros,0.88,0.5,0.81,0.62,0.62,0.56
+250.157,2.025,Águas Lindas de Goiás,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Princesa Daiana,1.0,1.0,1.0,0.94,1.0,1.0
+250.157,2.025,Águas Lindas de Goiás,Preta,Mulher Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Colégio Estadual Princesa Daiana,0.62,0.69,0.75,0.56,0.75,0.69
+240.197,2.024,Cuiabá,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,Coordenador(a) Pedagógico(a),EE Pe. Ernesto Camilo Barreto,1.0,1.0,1.0,1.0,1.0,1.0
+240.197,2.024,Cuiabá,Branca,Mulher Cisgênero,Bacharelado e Licenciatura,3_Consultor(a) pedagógico(a),EE Pe. Ernesto Camilo Barreto,0.75,0.75,0.94,0.75,0.75,0.94
+240.198,2.024,Vitória,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),EMEF Maria José Costa Moraes,0.88,0.94,0.88,0.88,0.81,0.94
+240.198,2.024,Vitória,Branca,Mulher Cisgênero,Bacharelado,1_Consultor(a) pedagógico(a),EMEF Maria José Costa Moraes,0.69,0.88,0.94,0.88,0.88,1.0
+240.2,2.024,Vitória,Parda,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF Paulo Roberto Vieira Gomes,0.92,1.0,1.0,1.0,1.0,0.81
+240.2,2.024,Vitória,Parda,Mulher Cisgênero,Licenciatura,7_Consultor(a) pedagógico(a),EMEF Paulo Roberto Vieira Gomes,0.44,0.75,0.44,0.69,0.81,0.56
+250.158,2.025,Petrolina,Branca,Mulher Cisgênero,Bacharelado,Diretor(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.81,0.81,1.0,0.81,0.81,0.94
+250.158,2.025,Petrolina,Branca,Mulher Cisgênero,Bacharelado,2_Consultor(a) pedagógico(a),Escola Municipal Nossa Senhora Rainha dos Anjos - CAIC,0.38,0.31,0.56,0.56,0.44,0.56
+240.202,2.024,Vitória,Preta,Mulher Cisgênero,Bacharelado e Licenciatura,Diretor(a),EMEF Tancredo de Almeida Neves,1.0,1.0,0.69,1.0,1.0,1.0
+240.202,2.024,Vitória,Preta,Mulher Cisgênero,Bacharelado e Licenciatura,6_Consultor(a) pedagógico(a),EMEF Tancredo de Almeida Neves,0.94,1.0,0.81,1.0,1.0,1.0
+240.204,2.024,Águas Lindas de Goiás,Preta,Mulher Cisgênero,Licenciatura,Diretor(a),Colégio Estadual Mansões Odisseia,1.0,0.94,1.0,1.0,1.0,0.94
+240.204,2.024,Águas Lindas de Goiás,Preta,Mulher Cisgênero,Licenciatura,13_Consultor(a) pedagógico(a),Colégio Estadual Mansões Odisseia,0.5,0.94,0.88,0.94,0.94,0.75
+250.159,2.025,Caruaru,Branca,Homem Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),ETI Capitão João Velho,0.75,0.62,0.83,0.88,0.69,0.5
+250.159,2.025,Caruaru,Branca,Homem Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Outros,1.0,0.92,0.75,0.88,0.88,1.0
+240.205,2.024,Águas Lindas de Goiás,Parda,Homem Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Maria do Carmo Lima,0.75,0.81,0.88,0.88,0.83,1.0
+240.205,2.024,Águas Lindas de Goiás,Parda,Homem Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Colégio Estadual Maria do Carmo Lima,0.81,0.94,1.0,1.0,0.75,0.75
+240.207,2.024,Luziânia,Parda,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),Colégio Estadual Hélio Roriz,0.94,1.0,0.94,1.0,0.88,0.94
+240.207,2.024,Luziânia,Parda,Homem Cisgênero,Licenciatura,9_Consultor(a) pedagógico(a),Colégio Estadual Hélio Roriz,0.94,0.81,0.94,0.81,0.75,0.94
+250.163,2.025,Vitória,Parda,Mulher Cisgênero,Bacharelado e Licenciatura,Coordenador(a) Pedagógico(a),EMEF Ti Anacleta Schneider Lucas,0.83,1.0,1.0,1.0,1.0,1.0
+250.163,2.025,Vitória,Parda,Mulher Cisgênero,Bacharelado e Licenciatura,1_Consultor(a) pedagógico(a),EMEF Ti Anacleta Schneider Lucas,0.88,0.88,0.83,1.0,0.94,1.0
+240.208,2.024,Vitória,Preta,Mulher Cisgênero,Licenciatura,Diretor(a),EMEF Paulo Reglus Neves Freire,0.94,1.0,0.88,0.94,0.94,1.0
+240.208,2.024,Vitória,Preta,Mulher Cisgênero,Licenciatura,11_Consultor(a) pedagógico(a),EMEF Paulo Reglus Neves Freire,0.83,0.81,0.94,0.94,0.94,0.94
+250.164,2.025,Luziânia,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Alceu de Araújo Roriz,0.81,0.75,0.81,0.94,0.88,1.0
+250.164,2.025,Luziânia,Preta,Mulher Cisgênero,Bacharelado,9_Consultor(a) pedagógico(a),Colégio Estadual Alceu de Araújo Roriz,0.75,0.88,1.0,0.75,0.81,0.88
+250.165,2.025,Petrolina,Branca,Mulher Cisgênero,Bacharelado,Coordenador(a) Pedagógico(a),Escola Municipal Paulo Freire,0.88,0.94,0.88,0.94,0.81,0.94
+250.165,2.025,Petrolina,Branca,Mulher Cisgênero,Bacharelado,5_Consultor(a) pedagógico(a),Outros,0.62,0.44,1.0,0.62,0.56,0.62
+240.209,2.024,Cuiabá,Parda,Homem Cisgênero,Licenciatura,Assistente Social,EE Dr. Mário de Castro,1.0,1.0,1.0,1.0,1.0,1.0
+240.209,2.024,Cuiabá,Parda,Homem Cisgênero,Licenciatura,8_Consultor(a) pedagógico(a),EE Dr. Mário de Castro,0.5,0.75,0.5,0.81,0.81,0.81
+250.166,2.025,Caruaru,Branca,Homem Cisgênero,Bacharelado,Diretor(a),Escola Municipal Prefeito João Lyra Filho,0.44,0.25,0.44,0.25,0.38,0.25
+250.166,2.025,Caruaru,Branca,Homem Cisgênero,Bacharelado,10_Consultor(a) pedagógico(a),Escola Municipal Prefeito João Lyra Filho,0.42,0.5,0.5,0.5,0.5,0.31
+240.211,2.024,Vitória,Prefiro não informar,Homem Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),EMEF Prezideu Amorim,1.0,1.0,1.0,1.0,1.0,1.0
+240.211,2.024,Vitória,Prefiro não informar,Homem Cisgênero,Licenciatura,6_Consultor(a) pedagógico(a),EMEF Prezideu Amorim,1.0,0.75,0.81,0.69,0.69,1.0
+250.167,2.025,Águas Lindas de Goiás,Branca,Homem Cisgênero,Bacharelado,Diretor(a),Colégio Estadual Paulo Freire,1.0,0.88,0.94,1.0,0.81,0.83
+250.167,2.025,Águas Lindas de Goiás,Branca,Homem Cisgênero,Bacharelado,13_Consultor(a) pedagógico(a),Colégio Estadual Paulo Freire,0.88,1.0,1.0,1.0,0.88,0.69
+240.216,2.024,Vitória,Preta,Mulher Cisgênero,Bacharelado,Diretor(a),EMEF Tancredo de Almeida Neves,1.0,1.0,0.69,1.0,1.0,1.0
+240.216,2.024,Vitória,Preta,Mulher Cisgênero,Bacharelado,6_Consultor(a) pedagógico(a),EMEF Tancredo de Almeida Neves,0.69,0.69,0.75,0.69,0.69,0.69
+250.171,2.025,Vitória,Branca,Homem Cisgênero,Bacharelado,Diretor(a),EMEF Heloísa Abreu Júdice de Mattos,0.56,0.62,0.81,0.75,0.81,0.75
+250.171,2.025,Vitória,Branca,Homem Cisgênero,Bacharelado,11_Consultor(a) pedagógico(a),EMEF Heloísa Abreu Júdice de Mattos,0.58,0.56,0.67,0.56,0.5,0.42
+240.002,2.024,Caruaru,Branca,Mulher Cisgênero,Licenciatura,Coordenador(a) Pedagógico(a),ETI Irmã Ceciliana Gross,0.88,0.56,0.83,0.5,0.5,0.56
+240.002,2.024,Caruaru,Branca,Mulher Cisgênero,Licenciatura,10_Consultor(a) pedagógico(a),ETI Irmã Ceciliana Gross,0.62,0.5,0.88,0.81,0.69,0.56
