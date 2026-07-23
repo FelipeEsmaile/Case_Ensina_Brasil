@@ -1,1 +1,8 @@
-# Página que onde as configurações estarão
+[client]
+showSidebarNavigation = false # Faz desaparecer a barra lateral 
+
+[theme]
+primaryColor = "#0c5525"             # Cor principal
+backgroundColor = "#eaf7e7"          # Fundo Principal
+secondaryBackgroundColor = "#a2d4a1" # Barra Lateral
+textColor = "#000000"                # Texto principal
