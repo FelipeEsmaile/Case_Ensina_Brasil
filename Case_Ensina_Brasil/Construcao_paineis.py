@@ -310,7 +310,7 @@ st.plotly_chart(fig_barras, use_container_width=True)
 
 
 # ====================================================================================
-    #           2. PADRÕES POR GRUPOS (MAPA DE CALOR)
+    #           2. PADRÕES POR GRUPOS (MAPA DE CALOR) --
     # ====================================================================================
 
 st.subheader("Padrões de Desempenho por Grupo")
