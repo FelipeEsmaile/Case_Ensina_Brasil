@@ -197,29 +197,29 @@ if len(df_filtrado) > 0:
     nota_oportunidade = medias_por_competencia[oportunidade]
 
     # Colunas
-    colunas = st.columns([0.3, 2, 0.3, 2, 0.3, 2, 0.3, 2, 0.3, 2, 0.3])
-    
-    with colunas[1]:
+    col1, col2, col3, col4, col5 = st.columns(5)
+
+    with col1:
         st.metric(label="Profissionais Analisados", value=qtd_profissionais)
         
-    with colunas[3]:
+    with col2:
         # :.2f formata o número para ter apenas 2 casas decimais
         st.metric(
             label="Autoavaliação Pontuação Média", 
             value=f"{media_global_auto:.2f}"
             )
         
-    with colunas[5]:
+    with col3:
         # O parâmetro 'delta' cria aquela setinha verde/vermelha mostrando a variação
         st.metric(
             label="Avaliação por Terceiros Pontuação Média", 
             value=f"{media_global_terc:.2f}"
         )
         
-    with colunas[7]:
+    with col4:
         st.metric(label=f"🌟 Destaque: {destaque}", value=f"{nota_destaque:.2f}")
         
-    with colunas[9]:
+    with col5:
         st.metric(label=f"🎯 Foco: {oportunidade}", value=f"{nota_oportunidade:.2f}")
 
 else:
