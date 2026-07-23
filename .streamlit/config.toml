@@ -2,7 +2,8 @@
 showSidebarNavigation = false # Faz desaparecer a barra lateral 
 
 [theme]
-primaryColor = "#0c5525"             # Cor principal
-backgroundColor = "#eaf7e7"          # Fundo Principal
-secondaryBackgroundColor = "#a2d4a1" # Barra Lateral
+primaryColor = "#1c3a6b"             # Cor principal
+backgroundColor = "#fafafa"          # Fundo Principal
+secondaryBackgroundColor = "#eaebee" # Barra Lateral
 textColor = "#000000"                # Texto principal
+font = "sans serif"                    # Fonte texto

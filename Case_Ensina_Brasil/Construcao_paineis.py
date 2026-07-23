@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+from matplotlib.colors import LinearSegmentedColormap
  
 # 1. Configuração inicial da página
 st.set_page_config(page_title="PAINEIS", layout="wide")
@@ -16,6 +17,22 @@ df = carregar_dados()
 # ==================================================================================================================================================================================================================
 #                      B A R R A    L A T E R A L    -    F I L T R O S
 # ==================================================================================================================================================================================================================
+
+# Isso é um pixel transparente gerado em código (nunca vai dar erro de carregamento)
+img_transparente = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+
+# 1. Configura a logo
+st.logo(
+    image=img_transparente, 
+    icon_image="Case_Ensina_Brasil/ensina-bra.png"
+)
+
+with st.sidebar:
+    col1, col2, col3 = st.columns([1,8,1])
+    with col2:
+        st.image("Case_Ensina_Brasil/ensina-bra.png", width=300)
+    st.markdown("---")
+
 st.sidebar.title("Filtros do Painel")
 
 # --- Filtros Primários (Sempre Visíveis) ---
@@ -65,7 +82,6 @@ with st.sidebar.expander("Filtros de Diversidade e Formação"):
         default=lista_generos     
     )
 
-
 # MOTOR DE FILTRAGEM (PANDAS)
 # Fatiando a base original conforme as seleções do usuário
 df_filtrado = df.copy()
@@ -95,7 +111,6 @@ else:
 
 # ========================================      C   A   R   D  S     ===============================================================================
 
-st.title("Panorama de Avaliações")
 
 # Código em CSS para reproduzir os cards com borda lateral verde, texto centralizado e bordas arredondadas
 st.markdown("""
@@ -103,7 +118,7 @@ st.markdown("""
     /* 1. Formata a caixa do Card (Fundo branco e borda grossa na esquerda) */
     [data-testid="stMetric"] {
         background-color: #FFFFFF !important;
-        border-left: 7px solid #0c5525 !important; /* MUDAR A COR */
+        border-left: 7px solid #1c3a6b !important; /* MUDAR A COR */
         border-top: none !important;
         border-right: 100px !important;
         border-bottom: none !important;
@@ -124,7 +139,7 @@ st.markdown("""
         display: flex !important;
         align-items: center !important; /* Garante que o ícone e o texto fiquem na mesma linha */
         justify-content: center !important;
-        color: #0c5525 !important; /*MUDAR A COR */
+        color: #0067AC !important; /*MUDAR A COR */
         font-weight: bold !important;
         margin: 0% !important;
         font-size: 14px !important; /* Tamanho da letra do título */
@@ -141,7 +156,7 @@ st.markdown("""
         width: 100%;
         display: flex;
         justify-content: center;
-        color: #0c5525 !important; /*MUDAR A COR */
+        color: #0067AC !important; /*MUDAR A COR */
     }
     </style>
     """, unsafe_allow_html=True)
@@ -212,8 +227,6 @@ else:
     st.warning("⚠️ Não há dados para exibir. Ajuste os filtros na barra lateral.")
 
 
-
-
 # ========================================      G   R   Á   F   I   C   O   S     ===============================================================================
 
 # --------------------------------------- Gráfico de Barras  ---------------------------------------
@@ -233,7 +246,7 @@ fig_barras.add_trace(go.Bar(
     x=competencias,
     y=medias_auto,
     name='Autoavaliação',
-    marker_color='#0c5525', # Verde escuro
+    marker_color='#F5C518', # Amerelo
     text=[f"{val:.2f}" for val in medias_auto], # Formata a nota com 2 casas decimais
     textposition='auto' # Coloca o número automaticamente dentro ou fora da barra
 ))
@@ -243,7 +256,7 @@ fig_barras.add_trace(go.Bar(
     x=competencias,
     y=medias_terc,
     name='Avaliação Terceiros',
-    marker_color='#8fce00', # Verde claro/limão
+    marker_color='#3CAA4E', # Verde '#3CAA4E'
     text=[f"{val:.2f}" for val in medias_terc],
     textposition='auto'
 ))
@@ -291,7 +304,7 @@ fig_heat = go.Figure(data=go.Heatmap(
     z=df_heatmap.values,
     x=df_heatmap.columns,
     y=df_heatmap.index,
-    colorscale='Greens',
+    colorscale=[[0.0, '#FFFFFF'], [0.5, '#F5C518'], [1.0, '#3CAA4E']],
     text=df_heatmap.values,
     texttemplate="%{text:.2f}",
     showscale=True
@@ -318,7 +331,7 @@ with col_div:
     gaps = [t - a for t, a in zip(medias_terc, medias_auto)]
         
         # Cores: Verde se Terceiros > Auto, Vermelho se Terceiros < Auto
-    cores_gap = ['#8fce00' if val >= 0 else '#d93025' for val in gaps]
+    cores_gap = ['#3CAA4E' if val >= 0 else '#F5C518' for val in gaps]
         
     fig_tornado = go.Figure()
     fig_tornado.add_trace(go.Bar(
@@ -337,28 +350,32 @@ with col_div:
     )
     st.plotly_chart(fig_tornado, use_container_width=True)
 
-with col_forcas:
 # -------------------------------------------------------------------------
-        # PERGUNTA 4: Destaque principais forças e oportunidades
-        # -------------------------------------------------------------------------
-        st.subheader("4. Forças e Oportunidades")
-        st.caption("Classificação de competências (Visão Terceiros)")
-        
-        import pandas as pd
-        df_forcas = pd.DataFrame({
-            'Competência': competencias,
-            'Nota Média': medias_terc
-        }).sort_values(by='Nota Média', ascending=False).reset_index(drop=True)
-        
-        # O index do pandas começa em 0, vamos ajustar para começar em 1 (Ranking)
-        df_forcas.index = df_forcas.index + 1
-        
-        # Exibe uma tabela limpa e colorida (Verde forte = Força, Branco/Claro = Oportunidade)
-        st.dataframe(
-            df_forcas.style.background_gradient(cmap='Greens', subset=['Nota Média'])
-                           .format({'Nota Média': '{:.2f}'}),
-            use_container_width=True
-        )
+# PERGUNTA 4: Destaque principais forças e oportunidades
+# -------------------------------------------------------------------------
+
+with col_forcas:
+
+    st.subheader("4. Forças e Oportunidades")
+    st.caption("Classificação de competências (Visão Terceiros)")
+
+    import pandas as pd
+    df_forcas = pd.DataFrame({
+        'Competência': competencias,
+        'Nota Média': medias_terc
+    }).sort_values(by='Nota Média', ascending=False).reset_index(drop=True)
+
+    df_forcas.index = df_forcas.index + 1
+
+    # 1. Cria um degradê personalizado usando AS SUAS cores exatas (Amarelo -> Verde)
+    meu_degrade = LinearSegmentedColormap.from_list('CoresInstitucionais', ['#F5C518', '#3CAA4E'])
+
+    # 2. Exibe a tabela aplicando o seu degradê
+    st.dataframe(
+        df_forcas.style.background_gradient(cmap=meu_degrade, subset=['Nota Média'])
+                    .format({'Nota Média': '{:.2f}'}),
+        use_container_width=True
+    )
 
 # ====================================================================================
     #                           V I S Ã O   D E   D A D O S
@@ -366,14 +383,23 @@ with col_forcas:
     
 # st.expander cria uma barra clicável que expande e esconde o conteúdo
 with st.expander("📊 Visualizar Base de Dados Detalhada"):
-    st.markdown("Explore as notas individuais dos profissionais após a aplicação dos filtros:")
-        
-        # Filtramos apenas as colunas que importam para o gestor ler (Removendo colunas de ID, por exemplo)
+
+    # Filtramos apenas as colunas que importam para o gestor ler
     colunas_para_exibir = ['Turma_Ensina', 'Polo_Ensina', 'Grau Acadêmico_Ensina'] + colunas_auto + colunas_terc
         
-        # Mostramos a tabela no Streamlit
+    # Fazemos uma cópia para o Pandas não reclamar da formatação
+    df_tabela = df_filtrado[colunas_para_exibir].copy()
+        
+    # Pintamos as colunas de dados com o seu Azul Marinho
+    df_estilizado = df_tabela.style.set_properties(**{
+        'background-color': '#FFFFFF', # Fundo branco
+        'color': '#302f2f',            # Texto azul
+        'border-color': '#FFFFFF'      # Linhas de grade brancas
+    })
+            
+    # Mostramos a tabela no Streamlit
     st.dataframe(
-        df_filtrado[colunas_para_exibir], 
+        df_estilizado, 
         use_container_width=True,
         hide_index=True # Esconde aquela coluna de números 0, 1, 2, 3 do Pandas
     )
