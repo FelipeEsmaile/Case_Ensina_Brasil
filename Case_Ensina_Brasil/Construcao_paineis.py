@@ -33,7 +33,7 @@ with st.sidebar:
         st.image("Case_Ensina_Brasil/ensina-bra.png", width=300)
     st.markdown("---")
 
-st.sidebar.title("Filtros do Painel")
+st.sidebar.title(":material/filter_list: Filtros")
 
 # --- Filtros Primários (Sempre Visíveis) ---
 st.sidebar.subheader("Filtros Principais")
@@ -200,27 +200,26 @@ if len(df_filtrado) > 0:
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        st.metric(label="Profissionais Analisados", value=qtd_profissionais)
+        st.metric(label=":material/Pin: Profissionais Analisados", value=qtd_profissionais
+            )
         
     with col2:
         # :.2f formata o número para ter apenas 2 casas decimais
         st.metric(
-            label="Autoavaliação Pontuação Média", 
-            value=f"{media_global_auto:.2f}"
+            label=":material/Show_Chart: Autoavaliação Pontuação Média", value=f"{media_global_auto:.2f}"
             )
         
     with col3:
         # O parâmetro 'delta' cria aquela setinha verde/vermelha mostrando a variação
         st.metric(
-            label="Avaliação por Terceiros Pontuação Média", 
-            value=f"{media_global_terc:.2f}"
+            label=":material/Show_Chart: Avaliação por Terceiros Pontuação Média", value=f"{media_global_terc:.2f}"
         )
         
     with col4:
-        st.metric(label=f"🌟 Destaque: {destaque}", value=f"{nota_destaque:.2f}")
+        st.metric(label=f":material/star:Destaque: {destaque}", value=f"{nota_destaque:.2f}")
         
     with col5:
-        st.metric(label=f"🎯 Foco: {oportunidade}", value=f"{nota_oportunidade:.2f}")
+        st.metric(label=f":material/target:Foco: {oportunidade}", value=f"{nota_oportunidade:.2f}")
 
 else:
     # Mensagem de segurança caso os filtros deixem a base vazia
@@ -231,9 +230,11 @@ else:
 
 # --------------------------------------- Gráfico de Barras  ---------------------------------------
     
-# 1. Gráfico de Barras Agrupadas: Comparativo Auto vs Terceiros
-st.subheader("Análise de Competências: Autoavaliação vs. Terceiros")
-    
+# Título utilizando markdown para centralizar
+st.markdown(
+    "<h3 style='text-align: center;'>Comparação das Competências: Autoavaliação X Avaliação por Terceiros</h3>", 
+    unsafe_allow_html=True
+)    
 # Calculando as médias usando as listas que já criamos nos Cards
 medias_auto = [df_filtrado[col].mean() for col in colunas_auto]
 medias_terc = [df_filtrado[col].mean() for col in colunas_terc]
@@ -273,7 +274,7 @@ fig_barras.update_traces(
         bordercolor="#1C3A6B",  # Borda Azul-marinho
         font=dict(              # A fonte OBRIGATORIAMENTE precisa ser um sub-dicionário
             size=13,
-            color="#0067AC"     # Texto Cinza-chumbo
+            color="#3A3A3A"     # Texto Cinza-chumbo
         )
     )
 )
@@ -291,6 +292,7 @@ fig_barras.update_layout(
                 showline=False,   # Remove a linha principal do eixo Y
                 zeroline=False, range=[0, 1]), # <-- NOTA MÁXIMA 
     margin=dict(t=40, b=40, l=40, r=40),
+
     # Move a legenda para o topo para economizar espaço
     legend=dict(
         orientation="h",
@@ -306,17 +308,16 @@ st.plotly_chart(fig_barras, use_container_width=True)
 
 
 
+# --------------------------------------- Gráfico de Desempenho por Polo  ---------------------------------------
 
-
-
-# ====================================================================================
-    #           2. PADRÕES POR GRUPOS (MAPA DE CALOR) --
-    # ====================================================================================
-
-st.subheader("Padrões de Desempenho por Grupo")
+# Título utilizando markdown para centralizar
+st.markdown(
+    "<h3 style='text-align: center;'>Desempenho por Polo</h3>", 
+    unsafe_allow_html=True
+)  
     
-    # IMPORTANTE: Aqui estamos usando 'Polo_Ensina', mas você pode criar um 
-    # selectbox no Streamlit para o usuário escolher entre Polo, Raça ou Grau.
+# IMPORTANTE: Aqui estamos usando 'Polo_Ensina', mas você pode criar um 
+# selectbox no Streamlit para o usuário escolher entre Polo, Raça ou Grau.
 coluna_agrupamento = 'Polo_Ensina' 
     
 # Calcula a média por grupo na visão de Terceiros
@@ -345,13 +346,14 @@ fig_heat.update_traces(
         bordercolor="#1C3A6B",  # Borda Azul-marinho
         font=dict(              # A fonte OBRIGATORIAMENTE precisa ser um sub-dicionário
             size=13,
-            color="#0067AC"     # Texto Cinza-chumbo
+            color="#3A3A3A"     # Texto Cinza-chumbo
         )
     )
 )
     
 fig_heat.update_layout(
-    yaxis_title="Grupos",
+    yaxis_title="Polo",
+    xaxis_title="Competências",
     margin=dict(t=20, b=20, l=20, r=20)
 )
 st.plotly_chart(fig_heat, use_container_width=True)
@@ -359,15 +361,19 @@ st.plotly_chart(fig_heat, use_container_width=True)
 
 
 
-col_div, col_forcas = st.columns(2)
+col1, col2 = st.columns(2)
 
-with col_div:
-        # -------------------------------------------------------------------------
-        # 3. DIVERGÊNCIAS (GRÁFICO DE GAP)
-        # -------------------------------------------------------------------------
-    st.subheader("Divergências de Perspectiva")
-        
-        # Calcula a diferença: Terceiros - Auto
+with col1:
+      
+# --------------------------------------- Gráfico de Gap de Percepção  ---------------------------------------
+
+    # Título utilizando markdown para centralizar
+    st.markdown(
+    "<h3 style='text-align: center;'>Gap de Percepção</h3>", 
+    unsafe_allow_html=True
+    )   
+    
+    # Calcula a diferença: Terceiros - Auto
     gaps = [t - a for t, a in zip(medias_terc, medias_auto)]
         
         # Cores: Verde se Terceiros > Auto, Vermelho se Terceiros < Auto
@@ -385,8 +391,8 @@ with col_div:
 
     fig_tornado.update_traces(
     # Mantemos o nosso truque do <extra></extra> e a formatação com %{x} e %{y}
-    hovertemplate="<b>%{y}</b> <br>" +
-                  "<b>Gap:</b> %{x:.2f}<extra></extra>",
+    hovertemplate="%{y} <br>" +
+                  "<b>Gap: %{x:.2f}</b><extra></extra>",
     
     # Sintaxe rigorosa do Plotly para a caixa
     hoverlabel=dict(
@@ -394,7 +400,7 @@ with col_div:
         bordercolor="#1C3A6B",  # Borda Azul-marinho
         font=dict(              # A fonte OBRIGATORIAMENTE precisa ser um sub-dicionário
             size=13,
-            color="#0067AC"     # Texto Cinza-chumbo
+            color="#3A3A3A"     # Texto Cinza-chumbo
             )
         )
     )
@@ -417,14 +423,17 @@ with col_div:
     
     st.plotly_chart(fig_tornado, use_container_width=True)
 
-# -------------------------------------------------------------------------
-# PERGUNTA 4: Destaque principais forças e oportunidades
-# -------------------------------------------------------------------------
+    st.caption("IMPORTANTE: Gap = Avaliação de Terceiros - Autoavaliação")
 
-with col_forcas:
+# --------------------------------------- Gráfico de Rank das Competências  ---------------------------------------
 
-    st.subheader("4. Forças e Oportunidades")
-    st.caption("Classificação de competências (Visão Terceiros)")
+with col2:
+
+    # Título utilizando markdown para centralizar
+    st.markdown(
+    "<h3 style='text-align: center;'>Rank das Competências</h3>", 
+    unsafe_allow_html=True
+    ) 
 
     import pandas as pd
     df_forcas = pd.DataFrame({
@@ -444,29 +453,34 @@ with col_forcas:
         use_container_width=True
     )
 
-# ====================================================================================
-    #                           V I S Ã O   D E   D A D O S
-    # ====================================================================================
-    
-# st.expander cria uma barra clicável que expande e esconde o conteúdo
-with st.expander("📊 Visualizar Base de Dados Detalhada"):
+    st.caption("IMPORTANTE: Com base na média das notas da Avaliação por Terceiros.")
+
+# ----------------------------------------------- Tabela -----------------------------------------------
+
+with st.expander(":material/Bar_Chart: Base de Dados"):
 
     # Filtramos apenas as colunas que importam para o gestor ler
-    colunas_para_exibir = ['Turma_Ensina', 'Polo_Ensina', 'Grau Acadêmico_Ensina'] + colunas_auto + colunas_terc
+    colunas_numericas = colunas_auto + colunas_terc
+    colunas_para_exibir = ['Registro_Ensina', 'Turma_Ensina', 'Polo_Ensina', 'Grau Acadêmico_Ensina'] + colunas_numericas
         
-    # Fazemos uma cópia para o Pandas não reclamar da formatação
+    # Fazemos uma cópia para não alterar a base original
     df_tabela = df_filtrado[colunas_para_exibir].copy()
-        
-    # Pintamos as colunas de dados com o seu Azul Marinho
-    df_estilizado = df_tabela.style.set_properties(**{
-        'background-color': '#FFFFFF', # Fundo branco
-        'color': '#302f2f',            # Texto azul
-        'border-color': '#FFFFFF'      # Linhas de grade brancas
-    })
+       
+    # TRATAMENTO 2: Aplicar a máscara de 2 casas decimais direto no Styler
+    df_estilizado = (
+        df_tabela.style
+        .format(formatter="{:.3f}", subset=['Registro_Ensina'])
+        .format(formatter="{:.2f}", subset=colunas_numericas) # Trava em 2 casas após a vírgula
+        .set_properties(**{
+            'background-color': '#FFFFFF', # Fundo branco
+            'color': "#000000",            # Texto cinza-chumbo/escuro
+            'border-color': '#FFFFFF'      # Linhas de grade brancas
+        })
+    )
             
     # Mostramos a tabela no Streamlit
     st.dataframe(
         df_estilizado, 
         use_container_width=True,
-        hide_index=True # Esconde aquela coluna de números 0, 1, 2, 3 do Pandas
+        hide_index=True 
     )
