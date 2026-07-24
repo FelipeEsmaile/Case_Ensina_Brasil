@@ -122,7 +122,7 @@ st.markdown("""
         border-right: 100px !important;
         border-bottom: none !important;
         border-radius: 10px !important; 
-        padding: 0px !important;
+        padding: 10px !important;
         box-shadow: 2px 2px 10px rgba(0,0,0,0.05); /* Leve sombra para destacar do fundo */
     }
 
