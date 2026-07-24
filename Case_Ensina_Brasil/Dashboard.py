@@ -4,7 +4,9 @@ import plotly.graph_objects as go
 from matplotlib.colors import LinearSegmentedColormap
  
 # 1. Configuração inicial da página
-st.set_page_config(page_title="PAINEIS", layout="wide")
+st.set_page_config(page_title="Dashboard",
+                    page_icon="Case_Ensina_Brasil/ensina-bra.png" ,
+                    layout="wide")
 
 # Função para carregar os dados (com cache para o painel não ficar lento ao filtrar)
 @st.cache_data
@@ -105,8 +107,6 @@ else:
 # ========================================================================================================================================================================
 #                                              T E L A      P R I N C I P A L
 # ========================================================================================================================================================================
-
-
 
 # ========================================      C   A   R   D  S     ===============================================================================
 
