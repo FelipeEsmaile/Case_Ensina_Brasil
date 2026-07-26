@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from matplotlib.colors import LinearSegmentedColormap
  
-# 1. Configuração inicial da página
+# Configuração inicial da página
 st.set_page_config(page_title="Dashboard",
                     page_icon="Case_Ensina_Brasil/ensina-bra.png" ,
                     layout="wide")
@@ -22,7 +22,7 @@ df = carregar_dados()
 # Isso é um pixel transparente gerado em código (nunca vai dar erro de carregamento)
 img_transparente = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
 
-# 1. Configura a logo
+# Configura a logo
 st.logo(
     image=img_transparente, 
     icon_image="Case_Ensina_Brasil/ensina-bra.png"
