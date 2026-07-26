@@ -163,7 +163,7 @@ st.markdown("""
 # Verifica se a base não está vazia após os filtros para não gerar erro de cálculo
 if len(df_filtrado) > 0:
     
-    # 1. Preparação das listas de colunas
+    # Preparação das listas de colunas
     competencias = [
         "Adaptação e Inovação", 
         "Capacidade de Execução", 
@@ -176,12 +176,12 @@ if len(df_filtrado) > 0:
     colunas_auto = [f"{comp}_Auto" for comp in competencias]
     colunas_terc = [f"{comp}_Terc" for comp in competencias]
 
-    # 2. Cálculos dos KPIs Básicos
+    # Cálculos dos KPIs Básicos
     qtd_profissionais = len(df_filtrado)
     media_global_auto = df_filtrado[colunas_auto].mean().mean()
     media_global_terc = df_filtrado[colunas_terc].mean().mean()
     
-    # 3. Cálculos de Forças e Oportunidades
+    # Cálculos de Destaque e Oportunidades
     medias_por_competencia = {}
     for comp in competencias:
         # Calcula a média combinada (Auto + Terc) para cada competência
@@ -203,13 +203,11 @@ if len(df_filtrado) > 0:
             )
         
     with col2:
-        # :.2f formata o número para ter apenas 2 casas decimais
         st.metric(
             label=":material/Show_Chart: Autoavaliação Pontuação Média", value=f"{media_global_auto:.2f}"
             )
         
     with col3:
-        # O parâmetro 'delta' cria aquela setinha verde/vermelha mostrando a variação
         st.metric(
             label=":material/Show_Chart: Avaliação por Terceiros Pontuação Média", value=f"{media_global_terc:.2f}"
         )
@@ -232,7 +230,8 @@ else:
 st.markdown(
     "<h3 style='text-align: center;'>Comparação das Competências: Autoavaliação X Avaliação por Terceiros</h3>", 
     unsafe_allow_html=True
-)    
+)
+
 # Calculando as médias usando as listas que já criamos nos Cards
 medias_auto = [df_filtrado[col].mean() for col in colunas_auto]
 medias_terc = [df_filtrado[col].mean() for col in colunas_terc]
@@ -246,49 +245,46 @@ fig_barras.add_trace(go.Bar(
     y=medias_auto,
     name='Autoavaliação',
     marker_color='#F5C518', # Amerelo
-    text=[f"{val:.2f}" for val in medias_auto], # Formata a nota com 2 casas decimais
+    text=[f"{val:.2f}" for val in medias_auto], 
     textposition='auto' # Coloca o número automaticamente dentro ou fora da barra
 ))
     
-# Adiciona as colunas de Terceiros
+# Adiciona as colunas de Avaliação de Terceiros
 fig_barras.add_trace(go.Bar(
     x=competencias,
     y=medias_terc,
     name='Avaliação Terceiros',
-    marker_color='#3CAA4E', # Verde '#3CAA4E'
+    marker_color='#3CAA4E', # Verde
     text=[f"{val:.2f}" for val in medias_terc],
     textposition='auto',
 ))
 
 fig_barras.update_traces(
-    # Mantemos o nosso truque do <extra></extra> e a formatação com %{x} e %{y}
     hovertemplate="<b>Tipo:</b> %{data.name}<br>" +
                   "<b>Competência:</b> %{x}<br>" +
                   "<b>Pontuação Média:</b> %{y:.2f}<extra></extra>",
     
-    # Sintaxe rigorosa do Plotly para a caixa
     hoverlabel=dict(
         bgcolor="#FAFAFA",      # Fundo off-white
         bordercolor="#1C3A6B",  # Borda Azul-marinho
-        font=dict(              # A fonte OBRIGATORIAMENTE precisa ser um sub-dicionário
+        font=dict(                
             size=13,
             color="#3A3A3A"     # Texto Cinza-chumbo
         )
     )
 )
 
-# Ajustes de layout para agrupar as barras e formatar o eixo
 fig_barras.update_layout(
     barmode='group', # Garante que as colunas fiquem lado a lado (e não empilhadas)
-    barcornerradius=10, # <--- Curvatura do gráfico
+    barcornerradius=10, # Curvatura do gráfico
     xaxis_title="Competências",
     yaxis_title="Pontuação Média",
     xaxis= dict(showgrid=False,   # Remove a grade do fundo
                 showline=False,   # Remove a linha principal do eixo X
-                zeroline=False), # Remove a linhas que cortando o gráfico
+                zeroline=False),  # Remove a linhas que cortando o gráfico
     yaxis= dict(showgrid=False,   # Remove a grade do fundo
                 showline=False,   # Remove a linha principal do eixo Y
-                zeroline=False, range=[0, 1]), # <-- NOTA MÁXIMA 
+                zeroline=False, range=[0, 1]), # NOTA MÁXIMA 
     margin=dict(t=40, b=40, l=40, r=40),
 
     # Move a legenda para o topo para economizar espaço
@@ -319,7 +315,7 @@ with col1:
     # Calcula a diferença: Terceiros - Auto
     gaps = [t - a for t, a in zip(medias_terc, medias_auto)]
         
-        # Cores: Verde se Terceiros > Auto, Vermelho se Terceiros < Auto
+    # Cores: Verde se Terceiros > Auto, Amerelo se Terceiros < Auto
     cores_gap = ['#3CAA4E' if val >= 0 else '#F5C518' for val in gaps]
         
     fig_tornado = go.Figure()
@@ -333,15 +329,13 @@ with col1:
     ))
 
     fig_tornado.update_traces(
-    # Mantemos o nosso truque do <extra></extra> e a formatação com %{x} e %{y}
     hovertemplate="%{y} <br>" +
                   "<b>Gap: %{x:.2f}</b><extra></extra>",
     
-    # Sintaxe rigorosa do Plotly para a caixa
     hoverlabel=dict(
         bgcolor="#FAFAFA",      # Fundo off-white
         bordercolor="#1C3A6B",  # Borda Azul-marinho
-        font=dict(              # A fonte OBRIGATORIAMENTE precisa ser um sub-dicionário
+        font=dict(                
             size=13,
             color="#3A3A3A"     # Texto Cinza-chumbo
             )
@@ -349,7 +343,7 @@ with col1:
     )
         
     fig_tornado.update_layout(
-        barcornerradius=10, # <--- Curvatura do gráfico
+        barcornerradius=10, # Curvatura do gráfico
         xaxis_title="Gap (Terceiros - Auto)",
         xaxis=dict(showgrid=False, 
                    showline=False,   
@@ -359,14 +353,15 @@ with col1:
                    ),
         yaxis=dict(showgrid=False,  # Remove a linha da moldura/borda externa do eixo
                    showline=False,  # Remove a grade do fundo
-                   zeroline=False  # Remove a linha específica que marca o número zero (0).
+                   zeroline=False   # Remove a linha específica que marca o número zero (0).
                    ),           
         margin=dict(t=20, b=20, l=20, r=20)
     )
     
     st.plotly_chart(fig_tornado, use_container_width=True)
 
-    st.caption("IMPORTANTE: Gap = Avaliação de Terceiros - Autoavaliação")   
+    st.caption("IMPORTANTE: Gap = Avaliação de Terceiros - Autoavaliação")
+  
 # --------------------------------------- Gráfico de Gap de Percepção  ---------------------------------------
 
 with col2:
@@ -385,10 +380,10 @@ with col2:
 
     df_forcas.index = df_forcas.index + 1
 
-    # 1. Cria um degradê personalizado usando AS SUAS cores exatas (Amarelo -> Verde)
+    # Cria um degradê personalizado usando as cores Amarelo -> Verde
     meu_degrade = LinearSegmentedColormap.from_list('CoresInstitucionais', ['#F5C518', '#3CAA4E'])
 
-    # 2. Exibe a tabela aplicando o seu degradê
+    # Exibe a tabela aplicando o seu degradê
     st.dataframe(
         df_forcas.style.background_gradient(cmap=meu_degrade, subset=['Nota Média'])
                     .format({'Nota Média': '{:.2f}'}),
@@ -405,8 +400,7 @@ st.markdown(
     unsafe_allow_html=True
 )  
     
-# IMPORTANTE: Aqui estamos usando 'Polo_Ensina', mas você pode criar um 
-# selectbox no Streamlit para o usuário escolher entre Polo, Raça ou Grau.
+
 coluna_agrupamento = 'Polo_Ensina' 
     
 # Calcula a média por grupo na visão de Terceiros
@@ -424,16 +418,15 @@ fig_heat = go.Figure(data=go.Heatmap(
 ))
 
 fig_heat.update_traces(
-    # Mantemos o nosso truque do <extra></extra> e a formatação com %{x} e %{y}
+
     hovertemplate="<b>Competência:</b> %{x}<br>" +
                   "<b>Polo:</b> %{y}<br>" +
                   "<b>Pontuação Média:</b> %{z:.2f}<extra></extra>",
     
-    # Sintaxe rigorosa do Plotly para a caixa
     hoverlabel=dict(
         bgcolor="#FAFAFA",      # Fundo off-white
         bordercolor="#1C3A6B",  # Borda Azul-marinho
-        font=dict(              # A fonte OBRIGATORIAMENTE precisa ser um sub-dicionário
+        font=dict(                
             size=13,
             color="#3A3A3A"     # Texto Cinza-chumbo
         )
@@ -458,11 +451,11 @@ with st.expander(":material/Bar_Chart: Base de Dados"):
     # Fazemos uma cópia para não alterar a base original
     df_tabela = df_filtrado[colunas_para_exibir].copy()
        
-    # TRATAMENTO 2: Aplicar a máscara de 2 casas decimais direto no Styler
+    # Aplicar a máscara de 2 casas decimais direto no Styler
     df_estilizado = (
         df_tabela.style
         .format(formatter="{:.3f}", subset=['Registro_Ensina'])
-        .format(formatter="{:.2f}", subset=colunas_numericas) # Trava em 2 casas após a vírgula
+        .format(formatter="{:.2f}", subset=colunas_numericas) 
         .set_properties(**{
             'background-color': '#FFFFFF', # Fundo branco
             'color': "#000000",            # Texto cinza-chumbo/escuro
