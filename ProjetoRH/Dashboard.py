@@ -4,14 +4,13 @@ import plotly.graph_objects as go
 from matplotlib.colors import LinearSegmentedColormap
  
 # Configuração inicial da página
-st.set_page_config(page_title="Dashboard",
-                    page_icon="Case_Ensina_Brasil/ensina-bra.png" ,
-                    layout="wide")
+st.set_page_config(page_title="Dashboard | People Analytics", layout="wide")
 
 # Função para carregar os dados (com cache para o painel não ficar lento ao filtrar)
 @st.cache_data
 def carregar_dados():
-    return pd.read_csv('Tratamento_dados/Base_Dashboard.csv')
+    # Carregando a nova base genérica para o portfólio
+    return pd.read_csv('Tratamento_dados/Base_Dashboard_Portfolio.csv')
 
 df = carregar_dados()
 
@@ -25,13 +24,13 @@ img_transparente = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAA
 # Configura a logo
 st.logo(
     image=img_transparente, 
-    icon_image="Case_Ensina_Brasil/ensina-bra.png"
+    icon_image="ProjetoRH/imagem_rh.png"
 )
 
 with st.sidebar:
     col1, col2, col3 = st.columns([1,8,1])
     with col2:
-        st.image("Case_Ensina_Brasil/ensina-bra.png", width=300)
+        st.image("ProjetoRH/imagem_rh.png", width=300)
     st.markdown("---")
 
 st.sidebar.title(":material/filter_list: Filtros")
@@ -39,25 +38,25 @@ st.sidebar.title(":material/filter_list: Filtros")
 # --- Filtros Primários (Sempre Visíveis) ---
 st.sidebar.subheader("Filtros Principais")
 
-# Filtro de Ano (Com opção 'Todas' para visão geral)
-lista_turmas = ["Todas"] + df['Turma_Ensina'].unique().tolist()
-turma_selecionada = st.sidebar.selectbox("Selecione a Turma (Ano):", options=lista_turmas)
+# Filtro de Ano (Com opção 'Todos' para visão geral)
+lista_anos = ["Todos"] + df['Ano'].unique().tolist()
+ano_selecionado = st.sidebar.selectbox("Selecione o Ano:", options=lista_anos)
 
-# Filtro de Polo
-lista_polos = df['Polo_Ensina'].unique().tolist()
-polos_selecionados = st.sidebar.multiselect(
-    "Selecione o Polo:", 
-    options=lista_polos, 
-    default=lista_polos
+# Filtro de Filial
+lista_filiais = df['Filial'].unique().tolist()
+filiais_selecionadas = st.sidebar.multiselect(
+    "Selecione a Filial:", 
+    options=lista_filiais, 
+    default=lista_filiais
 )
 
 # --- Filtros Secundários (Ocultos no Expander) ---
 with st.sidebar.expander("Filtros de Diversidade e Formação"):
 
     # Extrai as categorias únicas da base
-    lista_racas = df['Raça_Ensina'].unique().tolist()
-    lista_generos = df['Gênero_Ensina'].unique().tolist()
-    lista_graus = df['Grau Acadêmico_Ensina'].unique().tolist()
+    lista_racas = df['Raça'].unique().tolist()
+    lista_generos = df['Gênero'].unique().tolist()
+    lista_graus = df['Grau Acadêmico'].unique().tolist()
 
     # Cria as pílulas interativas para Grau Acadêmico
     graus_selecionados = st.pills(
@@ -87,21 +86,21 @@ with st.sidebar.expander("Filtros de Diversidade e Formação"):
 # Fatiando a base original conforme as seleções do usuário
 df_filtrado = df.copy()
 
-# Aplica o filtro de Ano (somente se o usuário não escolheu "Todas")
-if turma_selecionada != "Todas":
-    df_filtrado = df_filtrado[df_filtrado['Turma_Ensina'] == turma_selecionada]
+# Aplica o filtro de Ano (somente se o usuário não escolheu "Todos")
+if ano_selecionado != "Todos":
+    df_filtrado = df_filtrado[df_filtrado['Ano'] == ano_selecionado]
 
 # Trava de segurança: só filtra se todos os componentes tiverem pelo menos uma opção selecionada
-if not polos_selecionados or not generos_selecionados or not racas_selecionadas or not graus_selecionados:
+if not filiais_selecionadas or not generos_selecionados or not racas_selecionadas or not graus_selecionados:
     df_filtrado = df_filtrado.iloc[0:0] # Esvazia a base por segurança
     st.warning("⚠️ Selecione pelo menos uma opção em todos os filtros para visualizar os dados.")
 else:
     # Aplica os filtros de Múltipla Escolha com segurança
     df_filtrado = df_filtrado[
-        (df_filtrado['Polo_Ensina'].isin(polos_selecionados)) &
-        (df_filtrado['Gênero_Ensina'].isin(generos_selecionados)) &
-        (df_filtrado['Raça_Ensina'].isin(racas_selecionadas)) &
-        (df_filtrado['Grau Acadêmico_Ensina'].isin(graus_selecionados))
+        (df_filtrado['Filial'].isin(filiais_selecionadas)) &
+        (df_filtrado['Gênero'].isin(generos_selecionados)) &
+        (df_filtrado['Raça'].isin(racas_selecionadas)) &
+        (df_filtrado['Grau Acadêmico'].isin(graus_selecionados))
     ]
 
 # ========================================================================================================================================================================
@@ -110,14 +109,13 @@ else:
 
 # ========================================      C   A   R   D  S     ===============================================================================
 
-
-# Código em CSS para reproduzir os cards com borda lateral verde, texto centralizado e bordas arredondadas
+# Código em CSS para reproduzir os cards com borda lateral, texto centralizado e bordas arredondadas
 st.markdown("""
     <style>
     /* 1. Formata a caixa do Card (Fundo branco e borda grossa na esquerda) */
     [data-testid="stMetric"] {
         background-color: #FFFFFF !important;
-        border-left: 7px solid #1c3a6b !important; /* MUDAR A COR */
+        border-left: 7px solid #1c3a6b !important; 
         border-top: none !important;
         border-right: 100px !important;
         border-bottom: none !important;
@@ -126,7 +124,7 @@ st.markdown("""
         box-shadow: 2px 2px 10px rgba(0,0,0,0.05); /* Leve sombra para destacar do fundo */
     }
 
-    /* 2. Centraliza o Título, muda a cor e AUMENTA O ÍCONE */
+    /* 2. Centraliza o Título e muda a cor */
     [data-testid="stMetricLabel"],
     [data-testid="stMetricLabel"] > div {
         width: 100% !important;
@@ -138,7 +136,7 @@ st.markdown("""
         display: flex !important;
         align-items: center !important; /* Garante que o ícone e o texto fiquem na mesma linha */
         justify-content: center !important;
-        color: #0067AC !important; /*MUDAR A COR */
+        color: #0067AC !important; /* Cor Institucional Atualizada */
         font-weight: bold !important;
         margin: 0% !important;
         font-size: 14px !important; /* Tamanho da letra do título */
@@ -146,16 +144,16 @@ st.markdown("""
 
     /* Alvo direto apenas no ícone do Google */
     [data-testid="stMetricLabel"] p span {
-        font-size: 20px !important; /* <-- AUMENTE OU DIMINUA O ÍCONE AQUI */
+        font-size: 20px !important; 
         margin-right: 8px !important; /* Dá um espaço entre o ícone e a primeira letra */
     }
 
-    /* 3. Centraliza o Valor e muda a cor para verde */
+    /* 3. Centraliza o Valor e aplica a cor institucional */
     [data-testid="stMetricValue"] > div {
         width: 100%;
         display: flex;
         justify-content: center;
-        color: #0067AC !important; /*MUDAR A COR */
+        color: #0067AC !important; /* Cor Institucional Atualizada */
     }
     </style>
     """, unsafe_allow_html=True)
@@ -199,18 +197,13 @@ if len(df_filtrado) > 0:
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        st.metric(label=":material/Pin: Profissionais Analisados", value=qtd_profissionais
-            )
+        st.metric(label=":material/Pin: Colaboradores Analisados", value=qtd_profissionais)
         
     with col2:
-        st.metric(
-            label=":material/Show_Chart: Autoavaliação Pontuação Média", value=f"{media_global_auto:.2f}"
-            )
+        st.metric(label=":material/Show_Chart: Autoavaliação Média", value=f"{media_global_auto:.2f}")
         
     with col3:
-        st.metric(
-            label=":material/Show_Chart: Avaliação por Terceiros Pontuação Média", value=f"{media_global_terc:.2f}"
-        )
+        st.metric(label=":material/Show_Chart: Avaliação Terceiros Média", value=f"{media_global_terc:.2f}")
         
     with col4:
         st.metric(label=f":material/star:Destaque: {destaque}", value=f"{nota_destaque:.2f}")
@@ -244,9 +237,9 @@ fig_barras.add_trace(go.Bar(
     x=competencias,
     y=medias_auto,
     name='Autoavaliação',
-    marker_color='#F5C518', # Amerelo
+    marker_color='#1C3A6B', # Cor Primária
     text=[f"{val:.2f}" for val in medias_auto], 
-    textposition='auto' # Coloca o número automaticamente dentro ou fora da barra
+    textposition='auto' 
 ))
     
 # Adiciona as colunas de Avaliação de Terceiros
@@ -254,7 +247,7 @@ fig_barras.add_trace(go.Bar(
     x=competencias,
     y=medias_terc,
     name='Avaliação Terceiros',
-    marker_color='#3CAA4E', # Verde
+    marker_color='#8DB4E2', # Cor Secundária
     text=[f"{val:.2f}" for val in medias_terc],
     textposition='auto',
 ))
@@ -275,19 +268,17 @@ fig_barras.update_traces(
 )
 
 fig_barras.update_layout(
-    barmode='group', # Garante que as colunas fiquem lado a lado (e não empilhadas)
-    barcornerradius=10, # Curvatura do gráfico
+    barmode='group', 
+    barcornerradius=10, 
     xaxis_title="Competências",
     yaxis_title="Pontuação Média",
-    xaxis= dict(showgrid=False,   # Remove a grade do fundo
-                showline=False,   # Remove a linha principal do eixo X
-                zeroline=False),  # Remove a linhas que cortando o gráfico
-    yaxis= dict(showgrid=False,   # Remove a grade do fundo
-                showline=False,   # Remove a linha principal do eixo Y
-                zeroline=False, range=[0, 1]), # NOTA MÁXIMA 
+    xaxis= dict(showgrid=False,   
+                showline=False,   
+                zeroline=False),  
+    yaxis= dict(showgrid=False,   
+                showline=False,   
+                zeroline=False, range=[0, 1]), # NOTA MÁXIMA (Se for outra, ajuste aqui)
     margin=dict(t=40, b=40, l=40, r=40),
-
-    # Move a legenda para o topo para economizar espaço
     legend=dict(
         orientation="h",
         yanchor="bottom",
@@ -315,8 +306,8 @@ with col1:
     # Calcula a diferença: Terceiros - Auto
     gaps = [t - a for t, a in zip(medias_terc, medias_auto)]
         
-    # Cores: Verde se Terceiros > Auto, Amerelo se Terceiros < Auto
-    cores_gap = ['#3CAA4E' if val >= 0 else '#F5C518' for val in gaps]
+    # Cores personalizadas do portfólio
+    cores_gap = ['#1C3A6B' if val >= 0 else '#E07A5F' for val in gaps]
         
     fig_tornado = go.Figure()
     fig_tornado.add_trace(go.Bar(
@@ -333,17 +324,17 @@ with col1:
                   "<b>Gap: %{x:.2f}</b><extra></extra>",
     
     hoverlabel=dict(
-        bgcolor="#FAFAFA",      # Fundo off-white
-        bordercolor="#1C3A6B",  # Borda Azul-marinho
+        bgcolor="#FAFAFA",      
+        bordercolor="#1C3A6B",  
         font=dict(                
             size=13,
-            color="#3A3A3A"     # Texto Cinza-chumbo
+            color="#3A3A3A"     
             )
         )
     )
         
     fig_tornado.update_layout(
-        barcornerradius=10, # Curvatura do gráfico
+        barcornerradius=10, 
         xaxis_title="Gap (Terceiros - Auto)",
         xaxis=dict(showgrid=False, 
                    showline=False,   
@@ -351,15 +342,14 @@ with col1:
                    zerolinewidth=2, 
                    zerolinecolor='black'
                    ),
-        yaxis=dict(showgrid=False,  # Remove a linha da moldura/borda externa do eixo
-                   showline=False,  # Remove a grade do fundo
-                   zeroline=False   # Remove a linha específica que marca o número zero (0).
+        yaxis=dict(showgrid=False,  
+                   showline=False,  
+                   zeroline=False   
                    ),           
         margin=dict(t=20, b=20, l=20, r=20)
     )
     
     st.plotly_chart(fig_tornado, use_container_width=True)
-
     st.caption("IMPORTANTE: Gap = Avaliação de Terceiros - Autoavaliação")
   
 # --------------------------------------- Gráfico de Gap de Percepção  ---------------------------------------
@@ -372,7 +362,6 @@ with col2:
     unsafe_allow_html=True
     ) 
 
-    import pandas as pd
     df_forcas = pd.DataFrame({
         'Competência': competencias,
         'Nota Média': medias_terc
@@ -380,8 +369,8 @@ with col2:
 
     df_forcas.index = df_forcas.index + 1
 
-    # Cria um degradê personalizado usando as cores Amarelo -> Verde
-    meu_degrade = LinearSegmentedColormap.from_list('CoresInstitucionais', ['#F5C518', '#3CAA4E'])
+    # Cria um degradê personalizado usando as cores Azul Marinho -> Azul Aço
+    meu_degrade = LinearSegmentedColormap.from_list('CoresInstitucionais', ['#8DB4E2', '#1C3A6B'])
 
     # Exibe a tabela aplicando o seu degradê
     st.dataframe(
@@ -392,16 +381,15 @@ with col2:
 
     st.caption("IMPORTANTE: Com base na média das notas da Avaliação por Terceiros.")
 
-# --------------------------------------- Gráfico de Desempenho por Polo  ---------------------------------------
+# --------------------------------------- Gráfico de Desempenho por Filial  ---------------------------------------
 
 # Título utilizando markdown para centralizar
 st.markdown(
-    "<h3 style='text-align: center;'>Desempenho por Polo</h3>", 
+    "<h3 style='text-align: center;'>Desempenho por Filial</h3>", 
     unsafe_allow_html=True
 )  
     
-
-coluna_agrupamento = 'Polo_Ensina' 
+coluna_agrupamento = 'Filial' 
     
 # Calcula a média por grupo na visão de Terceiros
 df_heatmap = df_filtrado.groupby(coluna_agrupamento)[colunas_terc].mean().round(3)
@@ -411,30 +399,29 @@ fig_heat = go.Figure(data=go.Heatmap(
     z=df_heatmap.values,
     x=df_heatmap.columns,
     y=df_heatmap.index,
-    colorscale=[[0.0, '#FFFFFF'], [0.5, '#F5C518'], [1.0, '#3CAA4E']],
+    colorscale=[[0.0, '#FFFFFF'], [0.5, '#8DB4E2'], [1.0, '#1C3A6B']],
     text=df_heatmap.values,
     texttemplate="%{text:.2f}",
     showscale=True
 ))
 
 fig_heat.update_traces(
-
     hovertemplate="<b>Competência:</b> %{x}<br>" +
-                  "<b>Polo:</b> %{y}<br>" +
+                  "<b>Filial:</b> %{y}<br>" +
                   "<b>Pontuação Média:</b> %{z:.2f}<extra></extra>",
     
     hoverlabel=dict(
-        bgcolor="#FAFAFA",      # Fundo off-white
-        bordercolor="#1C3A6B",  # Borda Azul-marinho
+        bgcolor="#FAFAFA",      
+        bordercolor="#1C3A6B",  
         font=dict(                
             size=13,
-            color="#3A3A3A"     # Texto Cinza-chumbo
+            color="#3A3A3A"     
         )
     )
 )
     
 fig_heat.update_layout(
-    yaxis_title="Polo",
+    yaxis_title="Filial",
     xaxis_title="Competências",
     margin=dict(t=20, b=20, l=20, r=20)
 )
@@ -446,7 +433,7 @@ with st.expander(":material/Bar_Chart: Base de Dados"):
 
     # Filtramos apenas as colunas que importam para o gestor ler
     colunas_numericas = colunas_auto + colunas_terc
-    colunas_para_exibir = ['Registro_Ensina', 'Turma_Ensina', 'Polo_Ensina', 'Grau Acadêmico_Ensina'] + colunas_numericas
+    colunas_para_exibir = ['ID_Colaborador', 'Ano', 'Filial', 'Grau Acadêmico'] + colunas_numericas
         
     # Fazemos uma cópia para não alterar a base original
     df_tabela = df_filtrado[colunas_para_exibir].copy()
@@ -454,12 +441,12 @@ with st.expander(":material/Bar_Chart: Base de Dados"):
     # Aplicar a máscara de 2 casas decimais direto no Styler
     df_estilizado = (
         df_tabela.style
-        .format(formatter="{:.3f}", subset=['Registro_Ensina'])
+        .format(formatter="{:.0f}", subset=['ID_Colaborador']) # Tratando o ID como número inteiro (sem decimais)
         .format(formatter="{:.2f}", subset=colunas_numericas) 
         .set_properties(**{
-            'background-color': '#FFFFFF', # Fundo branco
-            'color': "#000000",            # Texto cinza-chumbo/escuro
-            'border-color': '#FFFFFF'      # Linhas de grade brancas
+            'background-color': '#FFFFFF', 
+            'color': "#000000",            
+            'border-color': '#FFFFFF'      
         })
     )
             
