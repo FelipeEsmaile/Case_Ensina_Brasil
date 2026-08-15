@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from matplotlib.colors import LinearSegmentedColormap
  
 # Configuração inicial da página
-st.set_page_config(page_title="Dashboard | People Analytics", layout="wide")
+st.set_page_config(page_title="PAINEL | RH", layout="wide")
 
 # Função para carregar os dados (com cache para o painel não ficar lento ao filtrar)
 @st.cache_data
