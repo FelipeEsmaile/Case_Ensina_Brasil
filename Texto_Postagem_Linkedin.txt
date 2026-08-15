@@ -1,0 +1,16 @@
+Montei um painel em Python para analisar discrepâncias entre autoavaliações e avaliações de terceiros em equipes corporativas. O objetivo principal foi mapear o gap de percepção: identificar quando um profissional subestima as próprias entregas por excesso de autocrítica ou quando existe desalinhamento em relação à avaliação dos pares.
+
+Stack:
+
+- Linguagem: Python.
+
+- ETL e Tratamento: Pandas.
+
+- Visualização: Plotly e Matplotlib.
+
+- Front-end e Deploy: Streamlit e HTML/CSS.
+
+Dashboard: [link]
+Código: [link do GitHub]
+
+#DataAnalytics #PeopleAnalytics #Python #Streamlit #Pandas #DataScience #BusinessIntelligence 
