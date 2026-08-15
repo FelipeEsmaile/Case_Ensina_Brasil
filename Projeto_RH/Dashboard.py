@@ -10,7 +10,7 @@ st.set_page_config(page_title="Dashboard | People Analytics", layout="wide")
 @st.cache_data
 def carregar_dados():
     # Carregando a nova base genérica para o portfólio
-    return pd.read_csv('Tratamento_dados/Base_Dashboard_Portfolio.csv')
+    return pd.read_csv('Tratamento_dados/Base_Dashboard.csv')
 
 df = carregar_dados()
 
